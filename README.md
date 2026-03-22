@@ -22,4 +22,4 @@ Hosted on Neon serverless PostgreSQL (AWS US East 1).
 - Current usage: well within free tier (100 CU-hrs/month).
 
 ## Demo Video
-[Link to be added]
+https://youtu.be/EeJOeXhqsHU
