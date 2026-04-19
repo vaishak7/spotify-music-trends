@@ -3,36 +3,36 @@
 -- Star Schema Dimension: Artist
 -- Enriched with aggregated track stats per artist
 
-with artists as (
-    select * from {{ ref('stg_artists') }}
+WITH artists AS (
+    SELECT * FROM {{ ref('stg_artists') }}
 ),
 
-track_artists as (
-    select * from {{ source('spotify_oltp', 'track_artists') }}
+track_artists AS (
+    SELECT * FROM {{ source('spotify_oltp', 'track_artists') }}
 ),
 
-tracks as (
-    select * from {{ ref('stg_tracks') }}
+tracks AS (
+    SELECT * FROM {{ ref('stg_tracks') }}
 ),
 
-artist_stats as (
-    select
+artist_stats AS (
+    SELECT
         ta.artist_id,
-        count(distinct ta.track_id)      as total_tracks,
-        round(avg(t.popularity), 2)      as avg_popularity,
-        max(t.popularity)                as peak_popularity,
-        count(distinct t.album_id)       as total_albums
-    from track_artists ta
-    join tracks t on ta.track_id = t.track_id
-    group by ta.artist_id
+        count(DISTINCT ta.track_id) AS total_tracks,
+        round(avg(t.popularity), 2) AS avg_popularity,
+        max(t.popularity) AS peak_popularity,
+        count(DISTINCT t.album_id) AS total_albums
+    FROM track_artists AS ta
+    INNER JOIN tracks AS t ON ta.track_id = t.track_id
+    GROUP BY ta.artist_id
 )
 
-select
+SELECT
     a.artist_id,
     a.artist_name,
-    coalesce(s.total_tracks, 0)    as total_tracks,
-    coalesce(s.avg_popularity, 0)  as avg_popularity,
-    coalesce(s.peak_popularity, 0) as peak_popularity,
-    coalesce(s.total_albums, 0)    as total_albums
-from artists a
-left join artist_stats s on a.artist_id = s.artist_id
+    coalesce(s.total_tracks, 0) AS total_tracks,
+    coalesce(s.avg_popularity, 0) AS avg_popularity,
+    coalesce(s.peak_popularity, 0) AS peak_popularity,
+    coalesce(s.total_albums, 0) AS total_albums
+FROM artists AS a
+LEFT JOIN artist_stats AS s ON a.artist_id = s.artist_id

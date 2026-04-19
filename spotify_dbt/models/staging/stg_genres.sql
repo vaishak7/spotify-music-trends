@@ -1,9 +1,9 @@
-with source as (
-    select * from {{ source('spotify_oltp', 'genres') }}
+WITH source AS (
+    SELECT * FROM {{ source('spotify_oltp', 'genres') }}
 )
 
-select
+SELECT
     genre_id,
-    trim(lower(genre_name)) as genre_name
-from source
-where genre_name is not null
+    trim(lower(genre_name)) AS genre_name
+FROM source
+WHERE genre_name IS NOT null

@@ -4,34 +4,34 @@
 -- Central fact table joining all dimensions.
 -- Grain: one row per track.
 
-with tracks as (
-    select * from {{ ref('stg_tracks') }}
+WITH tracks AS (
+    SELECT * FROM {{ ref('stg_tracks') }}
 ),
 
-audio as (
-    select * from {{ ref('stg_audio_features') }}
+audio AS (
+    SELECT * FROM {{ ref('stg_audio_features') }}
 ),
 
 -- Aggregate artist names per track for denormalization
-track_artists as (
-    select * from {{ source('spotify_oltp', 'track_artists') }}
+track_artists AS (
+    SELECT * FROM {{ source('spotify_oltp', 'track_artists') }}
 ),
 
-artists as (
-    select * from {{ ref('stg_artists') }}
+artists AS (
+    SELECT * FROM {{ ref('stg_artists') }}
 ),
 
-artist_agg as (
-    select
+artist_agg AS (
+    SELECT
         ta.track_id,
-        string_agg(a.artist_name, '; ' order by a.artist_name) as artist_names,
-        count(*) as artist_count
-    from track_artists ta
-    join artists a on ta.artist_id = a.artist_id
-    group by ta.track_id
+        string_agg(a.artist_name, '; ' ORDER BY a.artist_name) AS artist_names,
+        count(*) AS artist_count
+    FROM track_artists AS ta
+    INNER JOIN artists AS a ON ta.artist_id = a.artist_id
+    GROUP BY ta.track_id
 )
 
-select
+SELECT
     -- Keys
     t.track_id,
     t.album_id,
@@ -65,9 +65,9 @@ select
     af.energy_level,
 
     -- Derived metrics
-    round((af.danceability + af.energy + af.valence) / 3.0, 4) as mood_score,
-    round((af.acousticness + af.instrumentalness) / 2.0, 4)    as organic_score
+    round((af.danceability + af.energy + af.valence) / 3.0, 4) AS mood_score,
+    round((af.acousticness + af.instrumentalness) / 2.0, 4) AS organic_score
 
-from tracks t
-left join audio      af on t.track_id = af.track_id
-left join artist_agg aa on t.track_id = aa.track_id
+FROM tracks AS t
+LEFT JOIN audio AS af ON t.track_id = af.track_id
+LEFT JOIN artist_agg AS aa ON t.track_id = aa.track_id

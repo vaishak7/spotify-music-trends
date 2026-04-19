@@ -1,9 +1,9 @@
-with source as (
-    select * from {{ source('spotify_oltp', 'artists') }}
+WITH source AS (
+    SELECT * FROM {{ source('spotify_oltp', 'artists') }}
 )
 
-select
+SELECT
     artist_id,
-    trim(artist_name) as artist_name
-from source
-where artist_name is not null
+    trim(artist_name) AS artist_name
+FROM source
+WHERE artist_name IS NOT null

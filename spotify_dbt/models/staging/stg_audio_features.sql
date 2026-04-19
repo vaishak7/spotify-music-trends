@@ -1,9 +1,9 @@
-with source as (
-    select * from {{ source('spotify_oltp', 'audio_features') }}
+WITH source AS (
+    SELECT * FROM {{ source('spotify_oltp', 'audio_features') }}
 ),
 
-cleaned as (
-    select
+cleaned AS (
+    SELECT
         track_id,
         danceability,
         energy,
@@ -14,22 +14,23 @@ cleaned as (
         liveness,
         valence,
         tempo,
-        case
-            when tempo < 80  then 'slow'
-            when tempo < 120 then 'medium'
-            else 'fast'
-        end as tempo_bucket,
-        case
-            when energy >= 0.75 then 'high'
-            when energy >= 0.40 then 'medium'
-            else 'low'
-        end as energy_level
-    from source
-    where track_id is not null
-      and danceability between 0 and 1
-      and energy       between 0 and 1
-      and loudness     between -60 and 5
-      and tempo        > 0
+        CASE
+            WHEN tempo < 80 THEN 'slow'
+            WHEN tempo < 120 THEN 'medium'
+            ELSE 'fast'
+        END AS tempo_bucket,
+        CASE
+            WHEN energy >= 0.75 THEN 'high'
+            WHEN energy >= 0.40 THEN 'medium'
+            ELSE 'low'
+        END AS energy_level
+    FROM source
+    WHERE
+        track_id IS NOT null
+        AND danceability BETWEEN 0 AND 1
+        AND energy BETWEEN 0 AND 1
+        AND loudness BETWEEN -60 AND 5
+        AND tempo > 0
 )
 
-select * from cleaned
+SELECT * FROM cleaned
