@@ -2,14 +2,11 @@ name: Spotify dbt CI
 
 on:
   pull_request:
-    branches: [main]
+    branches: [master]
   push:
-    branches: [main]
+    branches: [master]
 
 jobs:
-  # -------------------------------------------------------
-  # JOB 1: SQL Linting with SQLFluff
-  # -------------------------------------------------------
   sqlfluff-lint:
     name: Lint SQL (SQLFluff)
     runs-on: ubuntu-latest
@@ -38,13 +35,10 @@ jobs:
           DBT_PASSWORD: ${{ secrets.DBT_PASSWORD }}
           DBT_DBNAME: ${{ secrets.DBT_DBNAME }}
 
-  # -------------------------------------------------------
-  # JOB 2: dbt Test Suite
-  # -------------------------------------------------------
   dbt-tests:
     name: Run dbt Tests
     runs-on: ubuntu-latest
-    needs: sqlfluff-lint        # Only run tests if linting passes
+    needs: sqlfluff-lint
 
     steps:
       - name: Checkout code
