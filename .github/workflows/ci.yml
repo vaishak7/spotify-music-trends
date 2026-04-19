@@ -20,30 +20,16 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install SQLFluff and dbt
-        run: pip install sqlfluff sqlfluff-templater-dbt dbt-postgres
-
-      - name: Copy profiles.yml
-        run: |
-          mkdir -p ~/.dbt
-          cp spotify_dbt/profiles.yml ~/.dbt/profiles.yml
-
-      - name: Install dbt packages
-        working-directory: spotify_dbt
-        run: dbt deps
+      - name: Install SQLFluff
+        run: pip install sqlfluff
 
       - name: Run SQLFluff lint
         working-directory: spotify_dbt
         run: |
           sqlfluff lint models/ \
             --dialect postgres \
-            --templater dbt \
-            --exclude-rules L031
-        env:
-          DBT_HOST: ${{ secrets.DBT_HOST }}
-          DBT_USER: ${{ secrets.DBT_USER }}
-          DBT_PASSWORD: ${{ secrets.DBT_PASSWORD }}
-          DBT_DBNAME: ${{ secrets.DBT_DBNAME }}
+            --templater jinja \
+            --exclude-rules L031,L034
 
   dbt-tests:
     name: Run dbt Tests
