@@ -1,0 +1,100 @@
+version: 2
+
+models:
+  - name: fact_tracks
+    description: >
+      Central fact table for the Spotify star schema.
+      Grain: one row per track. Joins all dimensions.
+    columns:
+      - name: track_id
+        description: "Spotify track ID — primary key of this fact table"
+        tests:
+          - not_null
+          - unique
+      - name: popularity
+        tests:
+          - not_null
+          - dbt_utils.accepted_range:
+              arguments:
+                min_value: 0
+                max_value: 100
+      - name: album_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_album')
+                field: album_id
+      - name: genre_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_genre')
+                field: genre_id
+      - name: danceability
+        tests:
+          - dbt_utils.accepted_range:
+              arguments:
+                min_value: 0
+                max_value: 1
+      - name: energy
+        tests:
+          - dbt_utils.accepted_range:
+              arguments:
+                min_value: 0
+                max_value: 1
+      - name: tempo
+        tests:
+          - not_null
+      - name: energy_level
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['low', 'medium', 'high']
+      - name: tempo_bucket
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['slow', 'medium', 'fast']
+
+  - name: dim_artist
+    description: "Artist dimension with aggregated track stats"
+    columns:
+      - name: artist_id
+        tests:
+          - not_null
+          - unique
+      - name: artist_name
+        tests:
+          - not_null
+          - unique
+      - name: avg_popularity
+        tests:
+          - dbt_utils.accepted_range:
+              arguments:
+                min_value: 0
+                max_value: 100
+
+  - name: dim_genre
+    description: "Genre dimension with track count and popularity stats"
+    columns:
+      - name: genre_id
+        tests:
+          - not_null
+          - unique
+      - name: genre_name
+        tests:
+          - not_null
+          - unique
+
+  - name: dim_album
+    description: "Album dimension with aggregated metrics"
+    columns:
+      - name: album_id
+        tests:
+          - not_null
+          - unique
+      - name: album_name
+        tests:
+          - not_null

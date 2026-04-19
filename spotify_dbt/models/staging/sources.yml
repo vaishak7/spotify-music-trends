@@ -1,0 +1,98 @@
+version: 2
+
+sources:
+  - name: spotify_oltp
+    description: "Raw Spotify OLTP tables loaded by ingest_data.py"
+    schema: public
+    tables:
+      - name: tracks
+        columns:
+          - name: track_id
+            tests:
+              - not_null
+              - unique
+          - name: track_name
+            tests:
+              - not_null
+          - name: popularity
+            tests:
+              - not_null
+          - name: duration_ms
+            tests:
+              - not_null
+          - name: album_id
+            tests:
+              - relationships:
+                  to: source('spotify_oltp', 'albums')
+                  field: album_id
+          - name: genre_id
+            tests:
+              - relationships:
+                  to: source('spotify_oltp', 'genres')
+                  field: genre_id
+
+      - name: audio_features
+        columns:
+          - name: track_id
+            tests:
+              - not_null
+              - unique
+              - relationships:
+                  to: source('spotify_oltp', 'tracks')
+                  field: track_id
+          - name: tempo
+            tests:
+              - not_null
+          - name: danceability
+            tests:
+              - not_null
+          - name: energy
+            tests:
+              - not_null
+
+      - name: artists
+        columns:
+          - name: artist_id
+            tests:
+              - not_null
+              - unique
+          - name: artist_name
+            tests:
+              - not_null
+              - unique
+
+      - name: albums
+        columns:
+          - name: album_id
+            tests:
+              - not_null
+              - unique
+          - name: album_name
+            tests:
+              - not_null
+
+      - name: genres
+        columns:
+          - name: genre_id
+            tests:
+              - not_null
+              - unique
+          - name: genre_name
+            tests:
+              - not_null
+              - unique
+
+      - name: track_artists
+        columns:
+          - name: track_id
+            tests:
+              - not_null
+              - relationships:
+                  to: source('spotify_oltp', 'tracks')
+                  field: track_id
+          - name: artist_id
+            tests:
+              - not_null
+              - relationships:
+                  to: source('spotify_oltp', 'artists')
+                  field: artist_id
