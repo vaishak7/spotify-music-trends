@@ -1,106 +1,138 @@
 # Spotify Music Trends Analysis
-## EAS 550 | Vaishak Muralidharan
+**EAS 550 | Vaishak Muralidharan**
+
+A full-stack data engineering project — from raw CSV ingestion to a live interactive dashboard. Built on Neon serverless PostgreSQL, transformed with dbt, tested with CI/CD, and deployed on Render.
+
+🔗 **Live App:** https://spotify-music-trends.onrender.com
+
+> Note: The app runs on Render's free tier and may take up to 60 seconds to wake up after inactivity. Just wait and it'll load.
 
 ---
 
-## Project Description
-Interactive data visualization dashboard exploring Spotify music trends across 114k tracks, 114 genres, and a fully normalized PostgreSQL schema hosted on Neon serverless.
+## What This Project Does
+
+Takes 114k Spotify tracks across 113 genres and turns them into an interactive analytics dashboard. You can explore genre popularity rankings, compare audio fingerprints across genres, track artist performance, and visualize mood clusters based on energy and valence.
+
+All data is queried live from a PostgreSQL database — no static CSV files.
 
 ---
 
-## Phase 1 Files
-| File | Description |
-|------|-------------|
-| `ERD_Spotify.png` | Entity Relationship Diagram (Crow's Foot notation) |
-| `schema.sql` | OLTP database schema — all CREATE TABLE statements |
-| `ingest_data.py` | Data cleaning and bulk ingestion pipeline (COPY method) |
-| `security.sql` | Role-Based Access Control (analyst + app_user roles) |
-| `3NF_justification_report.md` | Schema normalization justification |
-
----
-
-## Phase 2 Files
-
-### dbt Project (`spotify_dbt/`)
-```
-spotify_dbt/
-├── dbt_project.yml              # dbt project config
-├── profiles.yml                 # connection profile (uses env vars)
-├── packages.yml                 # dbt-utils dependency
-├── .sqlfluff                    # SQLFluff linting config
-├── models/
-│   ├── staging/
-│   │   ├── sources.yml          # Source definitions + column-level tests
-│   │   ├── stg_tracks.sql       # Cleaned tracks staging view
-│   │   ├── stg_audio_features.sql # Audio features + derived buckets
-│   │   ├── stg_artists.sql
-│   │   ├── stg_albums.sql
-│   │   └── stg_genres.sql
-│   └── marts/
-│       ├── schema.yml           # Mart model tests
-│       ├── fact_tracks.sql      # ⭐ Central fact table (star schema)
-│       ├── dim_artist.sql       # Artist dimension
-│       ├── dim_genre.sql        # Genre dimension
-│       └── dim_album.sql        # Album dimension
-└── tests/
-    ├── assert_no_orphaned_audio_features.sql
-    ├── assert_popularity_range.sql
-    └── assert_every_track_has_artist.sql
-```
-
-### CI/CD (`.github/workflows/`)
-| File | Description |
-|------|-------------|
-| `.github/workflows/ci.yml` | GitHub Actions: SQLFluff lint → dbt run → dbt test → docs |
-
-### Advanced SQL & Tuning
-| File | Description |
-|------|-------------|
-| `advanced_query_1_genre_ranking.sql` | Genre popularity ranking — RANK(), PERCENT_RANK(), SUM OVER |
-| `advanced_query_2_artist_performance_tiers.sql` | Artist tier classification — NTILE(), LAG(), CASE |
-| `advanced_query_3_mood_clusters.sql` | Cross-genre mood cluster analysis — 5 CTEs, ROW_NUMBER(), FILTER |
-| `indexes.sql` | Strategic indexes for query performance |
-| `performance_tuning_report.md` | EXPLAIN ANALYZE results, before/after comparison |
-
----
-
-## Star Schema Diagram
+## Architecture
 
 ```
-                          ┌─────────────┐
-                          │  dim_genre  │
-                          │─────────────│
-                          │ genre_id PK │
-                          │ genre_name  │
-                          │ total_tracks│
-                          │ avg_pop     │
-                          └──────┬──────┘
-                                 │
-┌─────────────┐          ┌───────▼──────────────────────────────┐          ┌──────────────┐
-│  dim_album  │          │             fact_tracks               │          │  dim_artist  │
-│─────────────│          │───────────────────────────────────────│          │──────────────│
-│ album_id PK │◄─────────│ track_id PK                           │          │ artist_id PK │
-│ album_name  │          │ album_id FK ──────────────────────────►──────────│ artist_name  │
-│ total_tracks│          │ genre_id FK                           │  (via    │ total_tracks │
-│ avg_pop     │          │ track_name                            │  artist_ │ avg_pop      │
-│ total_dur   │          │ popularity                            │  names   │ peak_pop     │
-└─────────────┘          │ duration_ms / _seconds                │  field)  └──────────────┘
-                         │ explicit, key, mode                   │
-                         │ artist_names (denorm)                 │
-                         │ danceability, energy, loudness        │
-                         │ speechiness, acousticness             │
-                         │ instrumentalness, liveness            │
-                         │ valence, tempo                        │
-                         │ tempo_bucket, energy_level            │
-                         │ mood_score, organic_score             │
-                         └───────────────────────────────────────┘
+Raw CSV (114k rows)
+      │
+      ▼
+ingest_data.py  ──►  Neon PostgreSQL (OLTP)
+                            │
+                            ▼
+                     dbt Transformations
+                     ├── Staging views (stg_*)
+                     └── Star Schema marts
+                          ├── fact_tracks
+                          ├── dim_genre
+                          ├── dim_album
+                          └── dim_artist
+                            │
+                            ▼
+                    Streamlit Dashboard
+                    (deployed on Render)
 ```
 
 ---
 
-## Setup Instructions
+## Live Dashboard Features
 
-### 1. Environment Variables
+| Page | What it shows |
+|------|--------------|
+| Overview | Key stats + top genres bar chart |
+| Genre Analysis | Popularity scatter, distribution histogram, data table |
+| Audio Features | Radar chart + heatmap comparing genres side by side |
+| Artist Performance | Top artists bar chart + energy vs popularity bubble chart |
+| Mood Clusters | Mood pie chart, top genres per mood, mood × genre heatmap |
+
+---
+
+## Project Structure
+
+```
+spotify-music-trends/
+├── app.py                    # Streamlit dashboard (Phase 3)
+├── db.py                     # DB connection pool
+├── requirements.txt          # Python dependencies
+├── render.yaml               # Render deployment config
+├── runtime.txt               # Python version pin
+├── schema.sql                # OLTP schema
+├── ingest_data.py            # Data ingestion pipeline
+├── security.sql              # RBAC roles
+├── ERD_Spotify.png           # Entity relationship diagram
+├── star_schema_diagram.png   # dbt lineage graph
+├── indexes.sql               # Performance indexes
+├── performance_tuning_report.md
+├── 3NF_justification_report.md
+├── spotify_dbt/
+│   ├── dbt_project.yml
+│   ├── packages.yml
+│   ├── profiles.yml
+│   ├── .sqlfluff
+│   ├── models/
+│   │   ├── staging/
+│   │   │   ├── sources.yml
+│   │   │   ├── stg_tracks.sql
+│   │   │   ├── stg_audio_features.sql
+│   │   │   ├── stg_artists.sql
+│   │   │   ├── stg_albums.sql
+│   │   │   └── stg_genres.sql
+│   │   └── marts/
+│   │       ├── schema.yml
+│   │       ├── fact_tracks.sql
+│   │       ├── dim_artist.sql
+│   │       ├── dim_genre.sql
+│   │       └── dim_album.sql
+│   ├── tests/
+│   │   ├── assert_no_orphaned_audio_features.sql
+│   │   ├── assert_popularity_range.sql
+│   │   └── assert_every_track_has_artist.sql
+│   ├── advanced_query_1_genre_ranking.sql
+│   ├── advanced_query_2_artist_performance_tiers.sql
+│   └── advanced_query_3_mood_clusters.sql
+└── .github/
+    └── workflows/
+        └── ci.yml            # GitHub Actions CI/CD
+```
+
+---
+
+## Star Schema
+
+```
+                    ┌─────────────┐
+                    │  dim_genre  │
+                    └──────┬──────┘
+                           │
+┌─────────────┐    ┌───────▼──────────┐    ┌──────────────┐
+│  dim_album  │◄───│   fact_tracks    │───►│  dim_artist  │
+└─────────────┘    │  (89,740 rows)   │    └──────────────┘
+                   │                  │
+                   │ track_id PK      │
+                   │ popularity       │
+                   │ danceability     │
+                   │ energy, valence  │
+                   │ tempo, loudness  │
+                   │ mood_score       │
+                   └──────────────────┘
+```
+
+---
+
+## Setup & Running Locally
+
+### 1. Clone and create `.env`
+```bash
+git clone https://github.com/vaishak7/spotify-music-trends
+cd spotify-music-trends
+```
+
 Create a `.env` file (never commit this):
 ```
 DATABASE_URL=postgresql://user:password@host/dbname?sslmode=require
@@ -110,35 +142,57 @@ DBT_PASSWORD=your_password
 DBT_DBNAME=your_dbname
 ```
 
-### 2. Install dbt
+### 2. Run the dashboard locally
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+### 3. Run dbt transformations
 ```bash
 pip install dbt-postgres
 cd spotify_dbt
-dbt deps          # install dbt-utils
-dbt run           # build all models
-dbt test          # run all data quality tests
-dbt docs generate # build data catalog
-dbt docs serve    # open catalog in browser
+dbt deps
+dbt run
+dbt test
+dbt docs generate && dbt docs serve
 ```
 
-### 3. GitHub Actions Secrets
-Add these in your repo → Settings → Secrets → Actions:
-- `DBT_HOST`
-- `DBT_USER`  
-- `DBT_PASSWORD`
-- `DBT_DBNAME`
-
-### 4. Apply New Indexes
-```bash
-psql $DATABASE_URL -f indexes.sql
-```
+### 4. GitHub Actions secrets
+Add these in repo → Settings → Secrets → Actions:
+- `DBT_HOST`, `DBT_USER`, `DBT_PASSWORD`, `DBT_DBNAME`
 
 ---
 
-## Neon CU Monitoring
-- SQLAlchemy uses `NullPool` — connections close immediately after use.
-- Neon compute sleeps after 5 minutes of inactivity.
-- Current usage: well within free tier (100 CU-hrs/month).
+## Data Quality — dbt Tests
 
-## Demo Video (Phase 1)
-https://youtu.be/EeJOeXhqsHU
+56 tests run automatically on every push via GitHub Actions:
+- `not_null` and `unique` on every primary key
+- `relationships` (referential integrity) across all tables
+- `accepted_values` on derived columns (energy_level, tempo_bucket)
+- `accepted_range` on numeric columns (popularity 0–100, audio features 0–1)
+- 3 custom singular tests for data integrity
+
+---
+
+## Performance
+
+Query 3 (mood cluster analysis) processes 89,740 rows via a 3-table JOIN:
+- Execution time: **94.8ms**
+- Buffer hits: **2,196 (all from shared cache — zero disk reads)**
+- 6 strategic indexes added including a covering index on `audio_features`
+
+---
+
+## Neon Database
+
+- Hosted on Neon serverless PostgreSQL (AWS US East 1)
+- Uses `NullPool` so connections close immediately after use
+- Neon compute sleeps after 5 minutes of inactivity
+- Well within free tier (100 CU-hrs/month)
+
+---
+
+## Demo Videos
+
+- Phase 1: https://youtu.be/EeJOeXhqsHU
