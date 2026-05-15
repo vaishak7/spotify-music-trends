@@ -18,10 +18,14 @@ def get_pool():
         raise ValueError("DATABASE_URL environment variable not set.")
     return psycopg2.pool.SimpleConnectionPool(
         minconn=1,
-        maxconn=5,
+        maxconn=10,
         dsn=database_url
     )
 
 def get_connection():
     p = get_pool()
     return p.getconn()
+
+def release_connection(conn):
+    p = get_pool()
+    p.putconn(conn)
