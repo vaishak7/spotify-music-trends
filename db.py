@@ -7,6 +7,7 @@ Reads DATABASE_URL from environment — never hardcoded.
 """
 
 import os
+import pandas as pd
 import psycopg2
 from psycopg2 import pool
 import streamlit as st
@@ -22,10 +23,11 @@ def get_pool():
         dsn=database_url
     )
 
-def get_connection():
+def run_query(sql, params=None):
     p = get_pool()
-    return p.getconn()
-
-def release_connection(conn):
-    p = get_pool()
-    p.putconn(conn)
+    conn = p.getconn()
+    try:
+        df = pd.read_sql(sql, conn, params=params)
+        return df
+    finally:
+        p.putconn(conn)
