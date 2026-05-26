@@ -193,7 +193,3 @@ Query 3 (mood cluster analysis) processes 89,740 rows via a 3-table JOIN:
 
 ---
 
-## Demo Videos
-
-- Phase 1: https://youtu.be/EeJOeXhqsHU
-- Phase 3: https://youtu.be/9ygB4chkJNM
