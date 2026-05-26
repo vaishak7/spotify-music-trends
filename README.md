@@ -1,5 +1,5 @@
 # Spotify Music Trends Analysis
-**EAS 550 | Vaishak Muralidharan**
+**  Vaishak Muralidharan**
 
 A full-stack data engineering project — from raw CSV ingestion to a live interactive dashboard. Built on Neon serverless PostgreSQL, transformed with dbt, tested with CI/CD, and deployed on Render.
 

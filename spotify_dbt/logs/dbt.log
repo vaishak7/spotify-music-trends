@@ -9941,3 +9941,2595 @@ Parsing Error
 [0m22:34:28.376746 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000290AB633670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000290AC9AAE90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000290AC9ABF10>]}
 [0m22:34:28.376746 [debug] [MainThread]: Flushing usage events
 [0m22:34:28.600226 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:47:13.606956 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025477A336A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025478CFE4A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025478CFDF00>]}
+
+
+============================== 20:47:13.609709 | ede7f514-18b3-49ab-8e8f-7bd70b67374f ==============================
+[0m20:47:13.609709 [info ] [MainThread]: Running with dbt=1.11.8
+[0m20:47:13.609709 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\VAISHAK\\OneDrive\\Desktop\\DMQL\\spotify-music-trends\\spotify_dbt', 'invocation_command': 'dbt test', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\VAISHAK\\OneDrive\\Desktop\\DMQL\\spotify-music-trends\\spotify_dbt\\logs'}
+[0m20:47:13.955351 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ede7f514-18b3-49ab-8e8f-7bd70b67374f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025478E0D7B0>]}
+[0m20:47:14.001965 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ede7f514-18b3-49ab-8e8f-7bd70b67374f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025477DA4A00>]}
+[0m20:47:14.001965 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m20:47:14.481948 [debug] [MainThread]: checksum: 7d524ac048c2100769df89d592e662e060a73ca564e31bd9c2a37efdfe8d8ab6, vars: {}, profile: , target: , version: 1.11.8
+[0m20:47:17.223795 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 9 files changed.
+[0m20:47:17.223795 [debug] [MainThread]: Partial parsing: updated file: spotify_dbt://models\staging\stg_tracks.sql
+[0m20:47:17.223795 [debug] [MainThread]: Partial parsing: updated file: spotify_dbt://models\staging\stg_artists.sql
+[0m20:47:17.239929 [debug] [MainThread]: Partial parsing: updated file: spotify_dbt://models\marts\fact_tracks.sql
+[0m20:47:17.239929 [debug] [MainThread]: Partial parsing: updated file: spotify_dbt://models\marts\dim_genre.sql
+[0m20:47:17.239929 [debug] [MainThread]: Partial parsing: updated file: spotify_dbt://models\marts\dim_artist.sql
+[0m20:47:17.239929 [debug] [MainThread]: Partial parsing: updated file: spotify_dbt://models\marts\dim_album.sql
+[0m20:47:17.239929 [debug] [MainThread]: Partial parsing: updated file: spotify_dbt://models\staging\stg_genres.sql
+[0m20:47:17.239929 [debug] [MainThread]: Partial parsing: updated file: spotify_dbt://models\staging\stg_albums.sql
+[0m20:47:17.239929 [debug] [MainThread]: Partial parsing: updated file: spotify_dbt://models\marts\fact_tracks.sql
+[0m20:47:17.239929 [debug] [MainThread]: Partial parsing: updated file: spotify_dbt://models\staging\stg_audio_features.sql
+[0m20:47:17.657481 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ede7f514-18b3-49ab-8e8f-7bd70b67374f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002547AA0CBB0>]}
+[0m20:47:17.761666 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\VAISHAK\OneDrive\Desktop\DMQL\spotify-music-trends\spotify_dbt\target\manifest.json
+[0m20:47:17.785690 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\VAISHAK\OneDrive\Desktop\DMQL\spotify-music-trends\spotify_dbt\target\semantic_manifest.json
+[0m20:47:17.861768 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ede7f514-18b3-49ab-8e8f-7bd70b67374f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002547A797910>]}
+[0m20:47:17.861768 [info ] [MainThread]: Found 56 data tests, 9 models, 6 sources, 581 macros
+[0m20:47:17.861768 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ede7f514-18b3-49ab-8e8f-7bd70b67374f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002547A8AD000>]}
+[0m20:47:17.864739 [info ] [MainThread]: 
+[0m20:47:17.864739 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m20:47:17.864739 [info ] [MainThread]: 
+[0m20:47:17.869190 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m20:47:17.873578 [debug] [ThreadPool]: Acquiring new postgres connection 'list_neondb_public_staging'
+[0m20:47:17.882490 [debug] [ThreadPool]: Acquiring new postgres connection 'list_neondb_public_marts'
+[0m20:47:20.299759 [debug] [ThreadPool]: Using postgres connection "list_neondb_public_staging"
+[0m20:47:20.299759 [debug] [ThreadPool]: Using postgres connection "list_neondb_public_marts"
+[0m20:47:20.299759 [debug] [ThreadPool]: On list_neondb_public_staging: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "connection_name": "list_neondb_public_staging"} */
+select
+      'neondb' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public_staging'
+    union all
+    select
+      'neondb' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public_staging'
+    union all
+    select
+      'neondb' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public_staging'
+  
+[0m20:47:20.301762 [debug] [ThreadPool]: On list_neondb_public_marts: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "connection_name": "list_neondb_public_marts"} */
+select
+      'neondb' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public_marts'
+    union all
+    select
+      'neondb' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public_marts'
+    union all
+    select
+      'neondb' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public_marts'
+  
+[0m20:47:20.301762 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:47:20.302444 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:47:31.841305 [debug] [ThreadPool]: SQL status: SELECT 5 in 11.548 seconds
+[0m20:47:31.841305 [debug] [ThreadPool]: On list_neondb_public_staging: ROLLBACK
+[0m20:47:31.857090 [debug] [ThreadPool]: On list_neondb_public_staging: Close
+[0m20:47:34.102951 [debug] [ThreadPool]: SQL status: SELECT 4 in 13.807 seconds
+[0m20:47:34.102951 [debug] [ThreadPool]: On list_neondb_public_marts: ROLLBACK
+[0m20:47:34.118217 [debug] [ThreadPool]: On list_neondb_public_marts: Close
+[0m20:47:34.138113 [debug] [MainThread]: Using postgres connection "master"
+[0m20:47:34.138113 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m20:47:34.138113 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:47:34.342701 [debug] [MainThread]: SQL status: SELECT 5 in 0.203 seconds
+[0m20:47:34.342701 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ede7f514-18b3-49ab-8e8f-7bd70b67374f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002547A5EA740>]}
+[0m20:47:34.342701 [debug] [MainThread]: On master: ROLLBACK
+[0m20:47:34.374753 [debug] [MainThread]: On master: COMMIT
+[0m20:47:34.376778 [debug] [MainThread]: Using postgres connection "master"
+[0m20:47:34.376778 [debug] [MainThread]: On master: COMMIT
+[0m20:47:34.406906 [debug] [MainThread]: SQL status: COMMIT in 0.035 seconds
+[0m20:47:34.406906 [debug] [MainThread]: On master: Close
+[0m20:47:34.430679 [debug] [Thread-1 (]: Began running node test.spotify_dbt.accepted_values_fact_tracks_energy_level__low__medium__high.54be0025d5
+[0m20:47:34.430679 [debug] [Thread-2 (]: Began running node test.spotify_dbt.accepted_values_fact_tracks_tempo_bucket__slow__medium__fast.0f2354c005
+[0m20:47:34.430679 [debug] [Thread-3 (]: Began running node test.spotify_dbt.assert_every_track_has_artist
+[0m20:47:34.430679 [info ] [Thread-1 (]: 1 of 56 START test accepted_values_fact_tracks_energy_level__low__medium__high . [RUN]
+[0m20:47:34.434748 [debug] [Thread-4 (]: Began running node test.spotify_dbt.assert_no_orphaned_audio_features
+[0m20:47:34.434748 [info ] [Thread-2 (]: 2 of 56 START test accepted_values_fact_tracks_tempo_bucket__slow__medium__fast  [RUN]
+[0m20:47:34.434748 [info ] [Thread-3 (]: 3 of 56 START test assert_every_track_has_artist ............................... [RUN]
+[0m20:47:34.438519 [debug] [Thread-1 (]: Acquiring new postgres connection 'test.spotify_dbt.accepted_values_fact_tracks_energy_level__low__medium__high.54be0025d5'
+[0m20:47:34.438519 [info ] [Thread-4 (]: 4 of 56 START test assert_no_orphaned_audio_features ........................... [RUN]
+[0m20:47:34.438519 [debug] [Thread-2 (]: Acquiring new postgres connection 'test.spotify_dbt.accepted_values_fact_tracks_tempo_bucket__slow__medium__fast.0f2354c005'
+[0m20:47:34.441135 [debug] [Thread-3 (]: Acquiring new postgres connection 'test.spotify_dbt.assert_every_track_has_artist'
+[0m20:47:34.441933 [debug] [Thread-1 (]: Began compiling node test.spotify_dbt.accepted_values_fact_tracks_energy_level__low__medium__high.54be0025d5
+[0m20:47:34.442376 [debug] [Thread-4 (]: Acquiring new postgres connection 'test.spotify_dbt.assert_no_orphaned_audio_features'
+[0m20:47:34.442376 [debug] [Thread-2 (]: Began compiling node test.spotify_dbt.accepted_values_fact_tracks_tempo_bucket__slow__medium__fast.0f2354c005
+[0m20:47:34.443835 [debug] [Thread-3 (]: Began compiling node test.spotify_dbt.assert_every_track_has_artist
+[0m20:47:34.447849 [debug] [Thread-1 (]: Writing injected SQL for node "test.spotify_dbt.accepted_values_fact_tracks_energy_level__low__medium__high.54be0025d5"
+[0m20:47:34.447849 [debug] [Thread-4 (]: Began compiling node test.spotify_dbt.assert_no_orphaned_audio_features
+[0m20:47:34.447849 [debug] [Thread-2 (]: Writing injected SQL for node "test.spotify_dbt.accepted_values_fact_tracks_tempo_bucket__slow__medium__fast.0f2354c005"
+[0m20:47:34.447849 [debug] [Thread-3 (]: Writing injected SQL for node "test.spotify_dbt.assert_every_track_has_artist"
+[0m20:47:34.447849 [debug] [Thread-4 (]: Writing injected SQL for node "test.spotify_dbt.assert_no_orphaned_audio_features"
+[0m20:47:34.461905 [debug] [Thread-1 (]: Began executing node test.spotify_dbt.accepted_values_fact_tracks_energy_level__low__medium__high.54be0025d5
+[0m20:47:34.475204 [debug] [Thread-2 (]: Began executing node test.spotify_dbt.accepted_values_fact_tracks_tempo_bucket__slow__medium__fast.0f2354c005
+[0m20:47:34.479251 [debug] [Thread-2 (]: Writing runtime sql for node "test.spotify_dbt.accepted_values_fact_tracks_tempo_bucket__slow__medium__fast.0f2354c005"
+[0m20:47:34.480251 [debug] [Thread-1 (]: Writing runtime sql for node "test.spotify_dbt.accepted_values_fact_tracks_energy_level__low__medium__high.54be0025d5"
+[0m20:47:34.481359 [debug] [Thread-3 (]: Began executing node test.spotify_dbt.assert_every_track_has_artist
+[0m20:47:34.482255 [debug] [Thread-4 (]: Began executing node test.spotify_dbt.assert_no_orphaned_audio_features
+[0m20:47:34.482255 [debug] [Thread-3 (]: Writing runtime sql for node "test.spotify_dbt.assert_every_track_has_artist"
+[0m20:47:34.482255 [debug] [Thread-2 (]: Using postgres connection "test.spotify_dbt.accepted_values_fact_tracks_tempo_bucket__slow__medium__fast.0f2354c005"
+[0m20:47:34.482255 [debug] [Thread-1 (]: Using postgres connection "test.spotify_dbt.accepted_values_fact_tracks_energy_level__low__medium__high.54be0025d5"
+[0m20:47:34.482255 [debug] [Thread-4 (]: Writing runtime sql for node "test.spotify_dbt.assert_no_orphaned_audio_features"
+[0m20:47:34.488146 [debug] [Thread-2 (]: On test.spotify_dbt.accepted_values_fact_tracks_tempo_bucket__slow__medium__fast.0f2354c005: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.accepted_values_fact_tracks_tempo_bucket__slow__medium__fast.0f2354c005"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        tempo_bucket as value_field,
+        count(*) as n_records
+
+    from "neondb"."public_marts"."fact_tracks"
+    group by tempo_bucket
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'slow','medium','fast'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:34.488146 [debug] [Thread-3 (]: Using postgres connection "test.spotify_dbt.assert_every_track_has_artist"
+[0m20:47:34.488146 [debug] [Thread-1 (]: On test.spotify_dbt.accepted_values_fact_tracks_energy_level__low__medium__high.54be0025d5: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.accepted_values_fact_tracks_energy_level__low__medium__high.54be0025d5"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        energy_level as value_field,
+        count(*) as n_records
+
+    from "neondb"."public_marts"."fact_tracks"
+    group by energy_level
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'low','medium','high'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:34.488146 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m20:47:34.488146 [debug] [Thread-4 (]: Using postgres connection "test.spotify_dbt.assert_no_orphaned_audio_features"
+[0m20:47:34.488146 [debug] [Thread-3 (]: On test.spotify_dbt.assert_every_track_has_artist: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.assert_every_track_has_artist"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  select t.track_id
+from "neondb"."public"."tracks" t
+left join "neondb"."public"."track_artists" ta
+    on t.track_id = ta.track_id
+where ta.track_id is null
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:34.488146 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m20:47:34.491998 [debug] [Thread-4 (]: On test.spotify_dbt.assert_no_orphaned_audio_features: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.assert_no_orphaned_audio_features"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  select af.track_id
+from "neondb"."public"."audio_features" af
+left join "neondb"."public"."tracks" t
+    on af.track_id = t.track_id
+where t.track_id is null
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:34.491998 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m20:47:34.491998 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m20:47:35.092683 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.600 seconds
+[0m20:47:35.092683 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.603 seconds
+[0m20:47:35.092683 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.601 seconds
+[0m20:47:35.092683 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.603 seconds
+[0m20:47:35.101187 [debug] [Thread-3 (]: On test.spotify_dbt.assert_every_track_has_artist: ROLLBACK
+[0m20:47:35.101187 [debug] [Thread-2 (]: On test.spotify_dbt.accepted_values_fact_tracks_tempo_bucket__slow__medium__fast.0f2354c005: ROLLBACK
+[0m20:47:35.101187 [debug] [Thread-4 (]: On test.spotify_dbt.assert_no_orphaned_audio_features: ROLLBACK
+[0m20:47:35.109082 [debug] [Thread-1 (]: On test.spotify_dbt.accepted_values_fact_tracks_energy_level__low__medium__high.54be0025d5: ROLLBACK
+[0m20:47:35.117282 [debug] [Thread-4 (]: On test.spotify_dbt.assert_no_orphaned_audio_features: Close
+[0m20:47:35.117282 [debug] [Thread-3 (]: On test.spotify_dbt.assert_every_track_has_artist: Close
+[0m20:47:35.117282 [debug] [Thread-2 (]: On test.spotify_dbt.accepted_values_fact_tracks_tempo_bucket__slow__medium__fast.0f2354c005: Close
+[0m20:47:35.132371 [debug] [Thread-1 (]: On test.spotify_dbt.accepted_values_fact_tracks_energy_level__low__medium__high.54be0025d5: Close
+[0m20:47:35.134416 [info ] [Thread-4 (]: 4 of 56 PASS assert_no_orphaned_audio_features ................................. [[32mPASS[0m in 0.69s]
+[0m20:47:35.139246 [debug] [Thread-4 (]: Finished running node test.spotify_dbt.assert_no_orphaned_audio_features
+[0m20:47:35.135236 [info ] [Thread-3 (]: 3 of 56 PASS assert_every_track_has_artist ..................................... [[32mPASS[0m in 0.70s]
+[0m20:47:35.139246 [debug] [Thread-4 (]: Began running node test.spotify_dbt.assert_popularity_range
+[0m20:47:35.137243 [info ] [Thread-2 (]: 2 of 56 PASS accepted_values_fact_tracks_tempo_bucket__slow__medium__fast ...... [[32mPASS[0m in 0.70s]
+[0m20:47:35.137243 [info ] [Thread-1 (]: 1 of 56 PASS accepted_values_fact_tracks_energy_level__low__medium__high ....... [[32mPASS[0m in 0.70s]
+[0m20:47:35.139246 [debug] [Thread-3 (]: Finished running node test.spotify_dbt.assert_every_track_has_artist
+[0m20:47:35.139246 [info ] [Thread-4 (]: 5 of 56 START test assert_popularity_range ..................................... [RUN]
+[0m20:47:35.139246 [debug] [Thread-2 (]: Finished running node test.spotify_dbt.accepted_values_fact_tracks_tempo_bucket__slow__medium__fast.0f2354c005
+[0m20:47:35.142853 [debug] [Thread-1 (]: Finished running node test.spotify_dbt.accepted_values_fact_tracks_energy_level__low__medium__high.54be0025d5
+[0m20:47:35.142853 [debug] [Thread-3 (]: Began running node test.spotify_dbt.dbt_utils_accepted_range_dim_artist_avg_popularity__100__0.f8177543c2
+[0m20:47:35.143979 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.assert_no_orphaned_audio_features, now test.spotify_dbt.assert_popularity_range)
+[0m20:47:35.143979 [debug] [Thread-2 (]: Began running node test.spotify_dbt.dbt_utils_accepted_range_fact_tracks_danceability__1__0.2517ae0bed
+[0m20:47:35.144858 [debug] [Thread-1 (]: Began running node test.spotify_dbt.dbt_utils_accepted_range_fact_tracks_energy__1__0.b5970cae8b
+[0m20:47:35.145858 [debug] [Thread-4 (]: Began compiling node test.spotify_dbt.assert_popularity_range
+[0m20:47:35.144858 [info ] [Thread-3 (]: 6 of 56 START test dbt_utils_accepted_range_dim_artist_avg_popularity__100__0 .. [RUN]
+[0m20:47:35.145858 [info ] [Thread-2 (]: 7 of 56 START test dbt_utils_accepted_range_fact_tracks_danceability__1__0 ..... [RUN]
+[0m20:47:35.149718 [debug] [Thread-4 (]: Writing injected SQL for node "test.spotify_dbt.assert_popularity_range"
+[0m20:47:35.146859 [info ] [Thread-1 (]: 8 of 56 START test dbt_utils_accepted_range_fact_tracks_energy__1__0 ........... [RUN]
+[0m20:47:35.149718 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.assert_every_track_has_artist, now test.spotify_dbt.dbt_utils_accepted_range_dim_artist_avg_popularity__100__0.f8177543c2)
+[0m20:47:35.149718 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.accepted_values_fact_tracks_tempo_bucket__slow__medium__fast.0f2354c005, now test.spotify_dbt.dbt_utils_accepted_range_fact_tracks_danceability__1__0.2517ae0bed)
+[0m20:47:35.149718 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.accepted_values_fact_tracks_energy_level__low__medium__high.54be0025d5, now test.spotify_dbt.dbt_utils_accepted_range_fact_tracks_energy__1__0.b5970cae8b)
+[0m20:47:35.149718 [debug] [Thread-4 (]: Began executing node test.spotify_dbt.assert_popularity_range
+[0m20:47:35.149718 [debug] [Thread-3 (]: Began compiling node test.spotify_dbt.dbt_utils_accepted_range_dim_artist_avg_popularity__100__0.f8177543c2
+[0m20:47:35.153124 [debug] [Thread-2 (]: Began compiling node test.spotify_dbt.dbt_utils_accepted_range_fact_tracks_danceability__1__0.2517ae0bed
+[0m20:47:35.153124 [debug] [Thread-1 (]: Began compiling node test.spotify_dbt.dbt_utils_accepted_range_fact_tracks_energy__1__0.b5970cae8b
+[0m20:47:35.155250 [debug] [Thread-4 (]: Writing runtime sql for node "test.spotify_dbt.assert_popularity_range"
+[0m20:47:35.159883 [debug] [Thread-3 (]: Writing injected SQL for node "test.spotify_dbt.dbt_utils_accepted_range_dim_artist_avg_popularity__100__0.f8177543c2"
+[0m20:47:35.162454 [debug] [Thread-2 (]: Writing injected SQL for node "test.spotify_dbt.dbt_utils_accepted_range_fact_tracks_danceability__1__0.2517ae0bed"
+[0m20:47:35.168357 [debug] [Thread-1 (]: Writing injected SQL for node "test.spotify_dbt.dbt_utils_accepted_range_fact_tracks_energy__1__0.b5970cae8b"
+[0m20:47:35.169087 [debug] [Thread-4 (]: Using postgres connection "test.spotify_dbt.assert_popularity_range"
+[0m20:47:35.169087 [debug] [Thread-3 (]: Began executing node test.spotify_dbt.dbt_utils_accepted_range_dim_artist_avg_popularity__100__0.f8177543c2
+[0m20:47:35.169087 [debug] [Thread-2 (]: Began executing node test.spotify_dbt.dbt_utils_accepted_range_fact_tracks_danceability__1__0.2517ae0bed
+[0m20:47:35.172823 [debug] [Thread-4 (]: On test.spotify_dbt.assert_popularity_range: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.assert_popularity_range"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  select track_id, popularity
+from "neondb"."public"."tracks"
+where popularity < 0 or popularity > 100
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:35.172823 [debug] [Thread-1 (]: Began executing node test.spotify_dbt.dbt_utils_accepted_range_fact_tracks_energy__1__0.b5970cae8b
+[0m20:47:35.175226 [debug] [Thread-3 (]: Writing runtime sql for node "test.spotify_dbt.dbt_utils_accepted_range_dim_artist_avg_popularity__100__0.f8177543c2"
+[0m20:47:35.177341 [debug] [Thread-2 (]: Writing runtime sql for node "test.spotify_dbt.dbt_utils_accepted_range_fact_tracks_danceability__1__0.2517ae0bed"
+[0m20:47:35.177341 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m20:47:35.179453 [debug] [Thread-1 (]: Writing runtime sql for node "test.spotify_dbt.dbt_utils_accepted_range_fact_tracks_energy__1__0.b5970cae8b"
+[0m20:47:35.181347 [debug] [Thread-3 (]: Using postgres connection "test.spotify_dbt.dbt_utils_accepted_range_dim_artist_avg_popularity__100__0.f8177543c2"
+[0m20:47:35.181347 [debug] [Thread-2 (]: Using postgres connection "test.spotify_dbt.dbt_utils_accepted_range_fact_tracks_danceability__1__0.2517ae0bed"
+[0m20:47:35.182224 [debug] [Thread-3 (]: On test.spotify_dbt.dbt_utils_accepted_range_dim_artist_avg_popularity__100__0.f8177543c2: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.dbt_utils_accepted_range_dim_artist_avg_popularity__100__0.f8177543c2"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+
+with meet_condition as(
+  select *
+  from "neondb"."public_marts"."dim_artist"
+),
+
+validation_errors as (
+  select *
+  from meet_condition
+  where
+    -- never true, defaults to an empty result set. Exists to ensure any combo of the `or` clauses below succeeds
+    1 = 2
+    -- records with a value >= min_value are permitted. The `not` flips this to find records that don't meet the rule.
+    or not avg_popularity >= 0
+    -- records with a value <= max_value are permitted. The `not` flips this to find records that don't meet the rule.
+    or not avg_popularity <= 100
+)
+
+select *
+from validation_errors
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:35.182224 [debug] [Thread-1 (]: Using postgres connection "test.spotify_dbt.dbt_utils_accepted_range_fact_tracks_energy__1__0.b5970cae8b"
+[0m20:47:35.183281 [debug] [Thread-2 (]: On test.spotify_dbt.dbt_utils_accepted_range_fact_tracks_danceability__1__0.2517ae0bed: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.dbt_utils_accepted_range_fact_tracks_danceability__1__0.2517ae0bed"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+
+with meet_condition as(
+  select *
+  from "neondb"."public_marts"."fact_tracks"
+),
+
+validation_errors as (
+  select *
+  from meet_condition
+  where
+    -- never true, defaults to an empty result set. Exists to ensure any combo of the `or` clauses below succeeds
+    1 = 2
+    -- records with a value >= min_value are permitted. The `not` flips this to find records that don't meet the rule.
+    or not danceability >= 0
+    -- records with a value <= max_value are permitted. The `not` flips this to find records that don't meet the rule.
+    or not danceability <= 1
+)
+
+select *
+from validation_errors
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:35.183281 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m20:47:35.184280 [debug] [Thread-1 (]: On test.spotify_dbt.dbt_utils_accepted_range_fact_tracks_energy__1__0.b5970cae8b: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.dbt_utils_accepted_range_fact_tracks_energy__1__0.b5970cae8b"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+
+with meet_condition as(
+  select *
+  from "neondb"."public_marts"."fact_tracks"
+),
+
+validation_errors as (
+  select *
+  from meet_condition
+  where
+    -- never true, defaults to an empty result set. Exists to ensure any combo of the `or` clauses below succeeds
+    1 = 2
+    -- records with a value >= min_value are permitted. The `not` flips this to find records that don't meet the rule.
+    or not energy >= 0
+    -- records with a value <= max_value are permitted. The `not` flips this to find records that don't meet the rule.
+    or not energy <= 1
+)
+
+select *
+from validation_errors
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:35.184280 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m20:47:35.185280 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:47:35.363873 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.192 seconds
+[0m20:47:35.363873 [debug] [Thread-4 (]: On test.spotify_dbt.assert_popularity_range: ROLLBACK
+[0m20:47:35.380183 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.203 seconds
+[0m20:47:35.380183 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.206 seconds
+[0m20:47:35.393464 [debug] [Thread-1 (]: On test.spotify_dbt.dbt_utils_accepted_range_fact_tracks_energy__1__0.b5970cae8b: ROLLBACK
+[0m20:47:35.396027 [debug] [Thread-2 (]: On test.spotify_dbt.dbt_utils_accepted_range_fact_tracks_danceability__1__0.2517ae0bed: ROLLBACK
+[0m20:47:35.396027 [debug] [Thread-4 (]: On test.spotify_dbt.assert_popularity_range: Close
+[0m20:47:35.396027 [info ] [Thread-4 (]: 5 of 56 PASS assert_popularity_range ........................................... [[32mPASS[0m in 0.25s]
+[0m20:47:35.396027 [debug] [Thread-4 (]: Finished running node test.spotify_dbt.assert_popularity_range
+[0m20:47:35.396027 [debug] [Thread-4 (]: Began running node test.spotify_dbt.dbt_utils_accepted_range_fact_tracks_popularity__100__0.8870087f9e
+[0m20:47:35.396027 [info ] [Thread-4 (]: 9 of 56 START test dbt_utils_accepted_range_fact_tracks_popularity__100__0 ..... [RUN]
+[0m20:47:35.396027 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.assert_popularity_range, now test.spotify_dbt.dbt_utils_accepted_range_fact_tracks_popularity__100__0.8870087f9e)
+[0m20:47:35.409234 [debug] [Thread-4 (]: Began compiling node test.spotify_dbt.dbt_utils_accepted_range_fact_tracks_popularity__100__0.8870087f9e
+[0m20:47:35.416514 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.233 seconds
+[0m20:47:35.416514 [debug] [Thread-4 (]: Writing injected SQL for node "test.spotify_dbt.dbt_utils_accepted_range_fact_tracks_popularity__100__0.8870087f9e"
+[0m20:47:35.417817 [debug] [Thread-3 (]: On test.spotify_dbt.dbt_utils_accepted_range_dim_artist_avg_popularity__100__0.f8177543c2: ROLLBACK
+[0m20:47:35.417817 [debug] [Thread-2 (]: On test.spotify_dbt.dbt_utils_accepted_range_fact_tracks_danceability__1__0.2517ae0bed: Close
+[0m20:47:35.417817 [debug] [Thread-1 (]: On test.spotify_dbt.dbt_utils_accepted_range_fact_tracks_energy__1__0.b5970cae8b: Close
+[0m20:47:35.417817 [debug] [Thread-4 (]: Began executing node test.spotify_dbt.dbt_utils_accepted_range_fact_tracks_popularity__100__0.8870087f9e
+[0m20:47:35.417817 [info ] [Thread-2 (]: 7 of 56 PASS dbt_utils_accepted_range_fact_tracks_danceability__1__0 ........... [[32mPASS[0m in 0.27s]
+[0m20:47:35.417817 [debug] [Thread-4 (]: Writing runtime sql for node "test.spotify_dbt.dbt_utils_accepted_range_fact_tracks_popularity__100__0.8870087f9e"
+[0m20:47:35.417817 [debug] [Thread-2 (]: Finished running node test.spotify_dbt.dbt_utils_accepted_range_fact_tracks_danceability__1__0.2517ae0bed
+[0m20:47:35.417817 [info ] [Thread-1 (]: 8 of 56 PASS dbt_utils_accepted_range_fact_tracks_energy__1__0 ................. [[32mPASS[0m in 0.27s]
+[0m20:47:35.425743 [debug] [Thread-2 (]: Began running node test.spotify_dbt.not_null_dim_album_album_id.2755463fdb
+[0m20:47:35.425743 [debug] [Thread-4 (]: Using postgres connection "test.spotify_dbt.dbt_utils_accepted_range_fact_tracks_popularity__100__0.8870087f9e"
+[0m20:47:35.427104 [debug] [Thread-1 (]: Finished running node test.spotify_dbt.dbt_utils_accepted_range_fact_tracks_energy__1__0.b5970cae8b
+[0m20:47:35.427104 [info ] [Thread-2 (]: 10 of 56 START test not_null_dim_album_album_id ................................ [RUN]
+[0m20:47:35.428126 [debug] [Thread-4 (]: On test.spotify_dbt.dbt_utils_accepted_range_fact_tracks_popularity__100__0.8870087f9e: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.dbt_utils_accepted_range_fact_tracks_popularity__100__0.8870087f9e"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+
+with meet_condition as(
+  select *
+  from "neondb"."public_marts"."fact_tracks"
+),
+
+validation_errors as (
+  select *
+  from meet_condition
+  where
+    -- never true, defaults to an empty result set. Exists to ensure any combo of the `or` clauses below succeeds
+    1 = 2
+    -- records with a value >= min_value are permitted. The `not` flips this to find records that don't meet the rule.
+    or not popularity >= 0
+    -- records with a value <= max_value are permitted. The `not` flips this to find records that don't meet the rule.
+    or not popularity <= 100
+)
+
+select *
+from validation_errors
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:35.428126 [debug] [Thread-1 (]: Began running node test.spotify_dbt.not_null_dim_album_album_name.da297ec6af
+[0m20:47:35.429127 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.dbt_utils_accepted_range_fact_tracks_danceability__1__0.2517ae0bed, now test.spotify_dbt.not_null_dim_album_album_id.2755463fdb)
+[0m20:47:35.429127 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m20:47:35.430126 [debug] [Thread-2 (]: Began compiling node test.spotify_dbt.not_null_dim_album_album_id.2755463fdb
+[0m20:47:35.430126 [info ] [Thread-1 (]: 11 of 56 START test not_null_dim_album_album_name .............................. [RUN]
+[0m20:47:35.435926 [debug] [Thread-2 (]: Writing injected SQL for node "test.spotify_dbt.not_null_dim_album_album_id.2755463fdb"
+[0m20:47:35.435926 [debug] [Thread-3 (]: On test.spotify_dbt.dbt_utils_accepted_range_dim_artist_avg_popularity__100__0.f8177543c2: Close
+[0m20:47:35.435926 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.dbt_utils_accepted_range_fact_tracks_energy__1__0.b5970cae8b, now test.spotify_dbt.not_null_dim_album_album_name.da297ec6af)
+[0m20:47:35.435926 [debug] [Thread-1 (]: Began compiling node test.spotify_dbt.not_null_dim_album_album_name.da297ec6af
+[0m20:47:35.439588 [info ] [Thread-3 (]: 6 of 56 PASS dbt_utils_accepted_range_dim_artist_avg_popularity__100__0 ........ [[32mPASS[0m in 0.29s]
+[0m20:47:35.443254 [debug] [Thread-1 (]: Writing injected SQL for node "test.spotify_dbt.not_null_dim_album_album_name.da297ec6af"
+[0m20:47:35.444254 [debug] [Thread-3 (]: Finished running node test.spotify_dbt.dbt_utils_accepted_range_dim_artist_avg_popularity__100__0.f8177543c2
+[0m20:47:35.444254 [debug] [Thread-2 (]: Began executing node test.spotify_dbt.not_null_dim_album_album_id.2755463fdb
+[0m20:47:35.445253 [debug] [Thread-3 (]: Began running node test.spotify_dbt.not_null_dim_artist_artist_id.496c36ddb1
+[0m20:47:35.447499 [debug] [Thread-2 (]: Writing runtime sql for node "test.spotify_dbt.not_null_dim_album_album_id.2755463fdb"
+[0m20:47:35.448955 [debug] [Thread-1 (]: Began executing node test.spotify_dbt.not_null_dim_album_album_name.da297ec6af
+[0m20:47:35.448955 [info ] [Thread-3 (]: 12 of 56 START test not_null_dim_artist_artist_id .............................. [RUN]
+[0m20:47:35.448955 [debug] [Thread-1 (]: Writing runtime sql for node "test.spotify_dbt.not_null_dim_album_album_name.da297ec6af"
+[0m20:47:35.453566 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.dbt_utils_accepted_range_dim_artist_avg_popularity__100__0.f8177543c2, now test.spotify_dbt.not_null_dim_artist_artist_id.496c36ddb1)
+[0m20:47:35.453566 [debug] [Thread-2 (]: Using postgres connection "test.spotify_dbt.not_null_dim_album_album_id.2755463fdb"
+[0m20:47:35.454271 [debug] [Thread-1 (]: Using postgres connection "test.spotify_dbt.not_null_dim_album_album_name.da297ec6af"
+[0m20:47:35.454271 [debug] [Thread-3 (]: Began compiling node test.spotify_dbt.not_null_dim_artist_artist_id.496c36ddb1
+[0m20:47:35.456186 [debug] [Thread-2 (]: On test.spotify_dbt.not_null_dim_album_album_id.2755463fdb: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.not_null_dim_album_album_id.2755463fdb"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select album_id
+from "neondb"."public_marts"."dim_album"
+where album_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:35.456186 [debug] [Thread-1 (]: On test.spotify_dbt.not_null_dim_album_album_name.da297ec6af: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.not_null_dim_album_album_name.da297ec6af"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select album_name
+from "neondb"."public_marts"."dim_album"
+where album_name is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:35.461193 [debug] [Thread-3 (]: Writing injected SQL for node "test.spotify_dbt.not_null_dim_artist_artist_id.496c36ddb1"
+[0m20:47:35.461193 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m20:47:35.461193 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:47:35.461193 [debug] [Thread-3 (]: Began executing node test.spotify_dbt.not_null_dim_artist_artist_id.496c36ddb1
+[0m20:47:35.465039 [debug] [Thread-3 (]: Writing runtime sql for node "test.spotify_dbt.not_null_dim_artist_artist_id.496c36ddb1"
+[0m20:47:35.465039 [debug] [Thread-3 (]: Using postgres connection "test.spotify_dbt.not_null_dim_artist_artist_id.496c36ddb1"
+[0m20:47:35.467045 [debug] [Thread-3 (]: On test.spotify_dbt.not_null_dim_artist_artist_id.496c36ddb1: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.not_null_dim_artist_artist_id.496c36ddb1"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select artist_id
+from "neondb"."public_marts"."dim_artist"
+where artist_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:35.467045 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m20:47:35.600247 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.178 seconds
+[0m20:47:35.611520 [debug] [Thread-4 (]: On test.spotify_dbt.dbt_utils_accepted_range_fact_tracks_popularity__100__0.8870087f9e: ROLLBACK
+[0m20:47:35.631905 [debug] [Thread-4 (]: On test.spotify_dbt.dbt_utils_accepted_range_fact_tracks_popularity__100__0.8870087f9e: Close
+[0m20:47:35.635944 [info ] [Thread-4 (]: 9 of 56 PASS dbt_utils_accepted_range_fact_tracks_popularity__100__0 ........... [[32mPASS[0m in 0.24s]
+[0m20:47:35.635944 [debug] [Thread-4 (]: Finished running node test.spotify_dbt.dbt_utils_accepted_range_fact_tracks_popularity__100__0.8870087f9e
+[0m20:47:35.635944 [debug] [Thread-4 (]: Began running node test.spotify_dbt.not_null_dim_artist_artist_name.e9f5f03eb5
+[0m20:47:35.635944 [info ] [Thread-4 (]: 13 of 56 START test not_null_dim_artist_artist_name ............................ [RUN]
+[0m20:47:35.635944 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.dbt_utils_accepted_range_fact_tracks_popularity__100__0.8870087f9e, now test.spotify_dbt.not_null_dim_artist_artist_name.e9f5f03eb5)
+[0m20:47:35.644480 [debug] [Thread-4 (]: Began compiling node test.spotify_dbt.not_null_dim_artist_artist_name.e9f5f03eb5
+[0m20:47:35.649423 [debug] [Thread-4 (]: Writing injected SQL for node "test.spotify_dbt.not_null_dim_artist_artist_name.e9f5f03eb5"
+[0m20:47:35.649423 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.183 seconds
+[0m20:47:35.649423 [debug] [Thread-3 (]: On test.spotify_dbt.not_null_dim_artist_artist_id.496c36ddb1: ROLLBACK
+[0m20:47:35.649423 [debug] [Thread-4 (]: Began executing node test.spotify_dbt.not_null_dim_artist_artist_name.e9f5f03eb5
+[0m20:47:35.654481 [debug] [Thread-4 (]: Writing runtime sql for node "test.spotify_dbt.not_null_dim_artist_artist_name.e9f5f03eb5"
+[0m20:47:35.657807 [debug] [Thread-4 (]: Using postgres connection "test.spotify_dbt.not_null_dim_artist_artist_name.e9f5f03eb5"
+[0m20:47:35.657807 [debug] [Thread-4 (]: On test.spotify_dbt.not_null_dim_artist_artist_name.e9f5f03eb5: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.not_null_dim_artist_artist_name.e9f5f03eb5"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select artist_name
+from "neondb"."public_marts"."dim_artist"
+where artist_name is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:35.657807 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m20:47:35.670947 [debug] [Thread-3 (]: On test.spotify_dbt.not_null_dim_artist_artist_id.496c36ddb1: Close
+[0m20:47:35.671950 [info ] [Thread-3 (]: 12 of 56 PASS not_null_dim_artist_artist_id .................................... [[32mPASS[0m in 0.22s]
+[0m20:47:35.672947 [debug] [Thread-3 (]: Finished running node test.spotify_dbt.not_null_dim_artist_artist_id.496c36ddb1
+[0m20:47:35.672947 [debug] [Thread-3 (]: Began running node test.spotify_dbt.not_null_dim_genre_genre_id.9bb76b166c
+[0m20:47:35.673946 [info ] [Thread-3 (]: 14 of 56 START test not_null_dim_genre_genre_id ................................ [RUN]
+[0m20:47:35.673946 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.not_null_dim_artist_artist_id.496c36ddb1, now test.spotify_dbt.not_null_dim_genre_genre_id.9bb76b166c)
+[0m20:47:35.675008 [debug] [Thread-3 (]: Began compiling node test.spotify_dbt.not_null_dim_genre_genre_id.9bb76b166c
+[0m20:47:35.678053 [debug] [Thread-3 (]: Writing injected SQL for node "test.spotify_dbt.not_null_dim_genre_genre_id.9bb76b166c"
+[0m20:47:35.679051 [debug] [Thread-3 (]: Began executing node test.spotify_dbt.not_null_dim_genre_genre_id.9bb76b166c
+[0m20:47:35.679051 [debug] [Thread-3 (]: Writing runtime sql for node "test.spotify_dbt.not_null_dim_genre_genre_id.9bb76b166c"
+[0m20:47:35.679051 [debug] [Thread-3 (]: Using postgres connection "test.spotify_dbt.not_null_dim_genre_genre_id.9bb76b166c"
+[0m20:47:35.679051 [debug] [Thread-3 (]: On test.spotify_dbt.not_null_dim_genre_genre_id.9bb76b166c: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.not_null_dim_genre_genre_id.9bb76b166c"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select genre_id
+from "neondb"."public_marts"."dim_genre"
+where genre_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:35.679051 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m20:47:35.831135 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.173 seconds
+[0m20:47:35.831135 [debug] [Thread-4 (]: On test.spotify_dbt.not_null_dim_artist_artist_name.e9f5f03eb5: ROLLBACK
+[0m20:47:35.846999 [debug] [Thread-4 (]: On test.spotify_dbt.not_null_dim_artist_artist_name.e9f5f03eb5: Close
+[0m20:47:35.860487 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.178 seconds
+[0m20:47:35.860487 [info ] [Thread-4 (]: 13 of 56 PASS not_null_dim_artist_artist_name .................................. [[32mPASS[0m in 0.21s]
+[0m20:47:35.862768 [debug] [Thread-3 (]: On test.spotify_dbt.not_null_dim_genre_genre_id.9bb76b166c: ROLLBACK
+[0m20:47:35.862768 [debug] [Thread-4 (]: Finished running node test.spotify_dbt.not_null_dim_artist_artist_name.e9f5f03eb5
+[0m20:47:35.862768 [debug] [Thread-4 (]: Began running node test.spotify_dbt.not_null_dim_genre_genre_name.25df20f8f3
+[0m20:47:35.862768 [info ] [Thread-4 (]: 15 of 56 START test not_null_dim_genre_genre_name .............................. [RUN]
+[0m20:47:35.862768 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.not_null_dim_artist_artist_name.e9f5f03eb5, now test.spotify_dbt.not_null_dim_genre_genre_name.25df20f8f3)
+[0m20:47:35.871240 [debug] [Thread-4 (]: Began compiling node test.spotify_dbt.not_null_dim_genre_genre_name.25df20f8f3
+[0m20:47:35.875564 [debug] [Thread-4 (]: Writing injected SQL for node "test.spotify_dbt.not_null_dim_genre_genre_name.25df20f8f3"
+[0m20:47:35.876564 [debug] [Thread-4 (]: Began executing node test.spotify_dbt.not_null_dim_genre_genre_name.25df20f8f3
+[0m20:47:35.880352 [debug] [Thread-4 (]: Writing runtime sql for node "test.spotify_dbt.not_null_dim_genre_genre_name.25df20f8f3"
+[0m20:47:35.880352 [debug] [Thread-4 (]: Using postgres connection "test.spotify_dbt.not_null_dim_genre_genre_name.25df20f8f3"
+[0m20:47:35.880352 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.421 seconds
+[0m20:47:35.880352 [debug] [Thread-4 (]: On test.spotify_dbt.not_null_dim_genre_genre_name.25df20f8f3: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.not_null_dim_genre_genre_name.25df20f8f3"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select genre_name
+from "neondb"."public_marts"."dim_genre"
+where genre_name is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:35.880352 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.422 seconds
+[0m20:47:35.880352 [debug] [Thread-2 (]: On test.spotify_dbt.not_null_dim_album_album_id.2755463fdb: ROLLBACK
+[0m20:47:35.880352 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m20:47:35.880352 [debug] [Thread-1 (]: On test.spotify_dbt.not_null_dim_album_album_name.da297ec6af: ROLLBACK
+[0m20:47:35.880352 [debug] [Thread-3 (]: On test.spotify_dbt.not_null_dim_genre_genre_id.9bb76b166c: Close
+[0m20:47:35.880352 [info ] [Thread-3 (]: 14 of 56 PASS not_null_dim_genre_genre_id ...................................... [[32mPASS[0m in 0.21s]
+[0m20:47:35.880352 [debug] [Thread-3 (]: Finished running node test.spotify_dbt.not_null_dim_genre_genre_id.9bb76b166c
+[0m20:47:35.880352 [debug] [Thread-3 (]: Began running node test.spotify_dbt.not_null_fact_tracks_album_id.0c5b024b9f
+[0m20:47:35.880352 [info ] [Thread-3 (]: 16 of 56 START test not_null_fact_tracks_album_id .............................. [RUN]
+[0m20:47:35.891676 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.not_null_dim_genre_genre_id.9bb76b166c, now test.spotify_dbt.not_null_fact_tracks_album_id.0c5b024b9f)
+[0m20:47:35.891676 [debug] [Thread-3 (]: Began compiling node test.spotify_dbt.not_null_fact_tracks_album_id.0c5b024b9f
+[0m20:47:35.894937 [debug] [Thread-3 (]: Writing injected SQL for node "test.spotify_dbt.not_null_fact_tracks_album_id.0c5b024b9f"
+[0m20:47:35.894937 [debug] [Thread-3 (]: Began executing node test.spotify_dbt.not_null_fact_tracks_album_id.0c5b024b9f
+[0m20:47:35.898314 [debug] [Thread-3 (]: Writing runtime sql for node "test.spotify_dbt.not_null_fact_tracks_album_id.0c5b024b9f"
+[0m20:47:35.899429 [debug] [Thread-3 (]: Using postgres connection "test.spotify_dbt.not_null_fact_tracks_album_id.0c5b024b9f"
+[0m20:47:35.900327 [debug] [Thread-3 (]: On test.spotify_dbt.not_null_fact_tracks_album_id.0c5b024b9f: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.not_null_fact_tracks_album_id.0c5b024b9f"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select album_id
+from "neondb"."public_marts"."fact_tracks"
+where album_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:35.900327 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m20:47:35.907474 [debug] [Thread-1 (]: On test.spotify_dbt.not_null_dim_album_album_name.da297ec6af: Close
+[0m20:47:35.907474 [debug] [Thread-2 (]: On test.spotify_dbt.not_null_dim_album_album_id.2755463fdb: Close
+[0m20:47:35.908508 [info ] [Thread-1 (]: 11 of 56 PASS not_null_dim_album_album_name .................................... [[32mPASS[0m in 0.47s]
+[0m20:47:35.909506 [debug] [Thread-1 (]: Finished running node test.spotify_dbt.not_null_dim_album_album_name.da297ec6af
+[0m20:47:35.909506 [info ] [Thread-2 (]: 10 of 56 PASS not_null_dim_album_album_id ...................................... [[32mPASS[0m in 0.48s]
+[0m20:47:35.910505 [debug] [Thread-1 (]: Began running node test.spotify_dbt.not_null_fact_tracks_genre_id.818b996926
+[0m20:47:35.911506 [debug] [Thread-2 (]: Finished running node test.spotify_dbt.not_null_dim_album_album_id.2755463fdb
+[0m20:47:35.911506 [info ] [Thread-1 (]: 17 of 56 START test not_null_fact_tracks_genre_id .............................. [RUN]
+[0m20:47:35.912052 [debug] [Thread-2 (]: Began running node test.spotify_dbt.not_null_fact_tracks_popularity.d49c4b56d6
+[0m20:47:35.913010 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.not_null_dim_album_album_name.da297ec6af, now test.spotify_dbt.not_null_fact_tracks_genre_id.818b996926)
+[0m20:47:35.913010 [info ] [Thread-2 (]: 18 of 56 START test not_null_fact_tracks_popularity ............................ [RUN]
+[0m20:47:35.913767 [debug] [Thread-1 (]: Began compiling node test.spotify_dbt.not_null_fact_tracks_genre_id.818b996926
+[0m20:47:35.913767 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.not_null_dim_album_album_id.2755463fdb, now test.spotify_dbt.not_null_fact_tracks_popularity.d49c4b56d6)
+[0m20:47:35.917893 [debug] [Thread-1 (]: Writing injected SQL for node "test.spotify_dbt.not_null_fact_tracks_genre_id.818b996926"
+[0m20:47:35.918796 [debug] [Thread-2 (]: Began compiling node test.spotify_dbt.not_null_fact_tracks_popularity.d49c4b56d6
+[0m20:47:35.922258 [debug] [Thread-2 (]: Writing injected SQL for node "test.spotify_dbt.not_null_fact_tracks_popularity.d49c4b56d6"
+[0m20:47:35.924265 [debug] [Thread-1 (]: Began executing node test.spotify_dbt.not_null_fact_tracks_genre_id.818b996926
+[0m20:47:35.924265 [debug] [Thread-2 (]: Began executing node test.spotify_dbt.not_null_fact_tracks_popularity.d49c4b56d6
+[0m20:47:35.926828 [debug] [Thread-1 (]: Writing runtime sql for node "test.spotify_dbt.not_null_fact_tracks_genre_id.818b996926"
+[0m20:47:35.926828 [debug] [Thread-2 (]: Writing runtime sql for node "test.spotify_dbt.not_null_fact_tracks_popularity.d49c4b56d6"
+[0m20:47:35.926828 [debug] [Thread-1 (]: Using postgres connection "test.spotify_dbt.not_null_fact_tracks_genre_id.818b996926"
+[0m20:47:35.926828 [debug] [Thread-2 (]: Using postgres connection "test.spotify_dbt.not_null_fact_tracks_popularity.d49c4b56d6"
+[0m20:47:35.926828 [debug] [Thread-1 (]: On test.spotify_dbt.not_null_fact_tracks_genre_id.818b996926: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.not_null_fact_tracks_genre_id.818b996926"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select genre_id
+from "neondb"."public_marts"."fact_tracks"
+where genre_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:35.926828 [debug] [Thread-2 (]: On test.spotify_dbt.not_null_fact_tracks_popularity.d49c4b56d6: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.not_null_fact_tracks_popularity.d49c4b56d6"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select popularity
+from "neondb"."public_marts"."fact_tracks"
+where popularity is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:35.932991 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:47:35.932991 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m20:47:36.058876 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.173 seconds
+[0m20:47:36.058876 [debug] [Thread-4 (]: On test.spotify_dbt.not_null_dim_genre_genre_name.25df20f8f3: ROLLBACK
+[0m20:47:36.077198 [debug] [Thread-4 (]: On test.spotify_dbt.not_null_dim_genre_genre_name.25df20f8f3: Close
+[0m20:47:36.077198 [info ] [Thread-4 (]: 15 of 56 PASS not_null_dim_genre_genre_name .................................... [[32mPASS[0m in 0.21s]
+[0m20:47:36.082377 [debug] [Thread-4 (]: Finished running node test.spotify_dbt.not_null_dim_genre_genre_name.25df20f8f3
+[0m20:47:36.082377 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.184 seconds
+[0m20:47:36.082377 [debug] [Thread-4 (]: Began running node test.spotify_dbt.not_null_fact_tracks_tempo.f7f19540ef
+[0m20:47:36.082377 [debug] [Thread-3 (]: On test.spotify_dbt.not_null_fact_tracks_album_id.0c5b024b9f: ROLLBACK
+[0m20:47:36.082377 [info ] [Thread-4 (]: 19 of 56 START test not_null_fact_tracks_tempo ................................. [RUN]
+[0m20:47:36.087186 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.not_null_dim_genre_genre_name.25df20f8f3, now test.spotify_dbt.not_null_fact_tracks_tempo.f7f19540ef)
+[0m20:47:36.087186 [debug] [Thread-4 (]: Began compiling node test.spotify_dbt.not_null_fact_tracks_tempo.f7f19540ef
+[0m20:47:36.091254 [debug] [Thread-4 (]: Writing injected SQL for node "test.spotify_dbt.not_null_fact_tracks_tempo.f7f19540ef"
+[0m20:47:36.092224 [debug] [Thread-4 (]: Began executing node test.spotify_dbt.not_null_fact_tracks_tempo.f7f19540ef
+[0m20:47:36.094230 [debug] [Thread-4 (]: Writing runtime sql for node "test.spotify_dbt.not_null_fact_tracks_tempo.f7f19540ef"
+[0m20:47:36.094230 [debug] [Thread-4 (]: Using postgres connection "test.spotify_dbt.not_null_fact_tracks_tempo.f7f19540ef"
+[0m20:47:36.095736 [debug] [Thread-4 (]: On test.spotify_dbt.not_null_fact_tracks_tempo.f7f19540ef: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.not_null_fact_tracks_tempo.f7f19540ef"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select tempo
+from "neondb"."public_marts"."fact_tracks"
+where tempo is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:36.095736 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m20:47:36.097410 [debug] [Thread-3 (]: On test.spotify_dbt.not_null_fact_tracks_album_id.0c5b024b9f: Close
+[0m20:47:36.097410 [info ] [Thread-3 (]: 16 of 56 PASS not_null_fact_tracks_album_id .................................... [[32mPASS[0m in 0.21s]
+[0m20:47:36.097410 [debug] [Thread-3 (]: Finished running node test.spotify_dbt.not_null_fact_tracks_album_id.0c5b024b9f
+[0m20:47:36.097410 [debug] [Thread-3 (]: Began running node test.spotify_dbt.not_null_fact_tracks_track_id.e05f9b02ec
+[0m20:47:36.097410 [info ] [Thread-3 (]: 20 of 56 START test not_null_fact_tracks_track_id .............................. [RUN]
+[0m20:47:36.097410 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.not_null_fact_tracks_album_id.0c5b024b9f, now test.spotify_dbt.not_null_fact_tracks_track_id.e05f9b02ec)
+[0m20:47:36.097410 [debug] [Thread-3 (]: Began compiling node test.spotify_dbt.not_null_fact_tracks_track_id.e05f9b02ec
+[0m20:47:36.113818 [debug] [Thread-3 (]: Writing injected SQL for node "test.spotify_dbt.not_null_fact_tracks_track_id.e05f9b02ec"
+[0m20:47:36.117850 [debug] [Thread-3 (]: Began executing node test.spotify_dbt.not_null_fact_tracks_track_id.e05f9b02ec
+[0m20:47:36.120559 [debug] [Thread-3 (]: Writing runtime sql for node "test.spotify_dbt.not_null_fact_tracks_track_id.e05f9b02ec"
+[0m20:47:36.120559 [debug] [Thread-3 (]: Using postgres connection "test.spotify_dbt.not_null_fact_tracks_track_id.e05f9b02ec"
+[0m20:47:36.120559 [debug] [Thread-3 (]: On test.spotify_dbt.not_null_fact_tracks_track_id.e05f9b02ec: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.not_null_fact_tracks_track_id.e05f9b02ec"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select track_id
+from "neondb"."public_marts"."fact_tracks"
+where track_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:36.120559 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m20:47:36.127383 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.196 seconds
+[0m20:47:36.127383 [debug] [Thread-1 (]: On test.spotify_dbt.not_null_fact_tracks_genre_id.818b996926: ROLLBACK
+[0m20:47:36.127383 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.198 seconds
+[0m20:47:36.127383 [debug] [Thread-2 (]: On test.spotify_dbt.not_null_fact_tracks_popularity.d49c4b56d6: ROLLBACK
+[0m20:47:36.148148 [debug] [Thread-1 (]: On test.spotify_dbt.not_null_fact_tracks_genre_id.818b996926: Close
+[0m20:47:36.148148 [info ] [Thread-1 (]: 17 of 56 PASS not_null_fact_tracks_genre_id .................................... [[32mPASS[0m in 0.24s]
+[0m20:47:36.148148 [debug] [Thread-1 (]: Finished running node test.spotify_dbt.not_null_fact_tracks_genre_id.818b996926
+[0m20:47:36.148148 [debug] [Thread-1 (]: Began running node test.spotify_dbt.relationships_fact_tracks_album_id__album_id__ref_dim_album_.b2e47e2756
+[0m20:47:36.148148 [debug] [Thread-2 (]: On test.spotify_dbt.not_null_fact_tracks_popularity.d49c4b56d6: Close
+[0m20:47:36.148148 [info ] [Thread-1 (]: 21 of 56 START test relationships_fact_tracks_album_id__album_id__ref_dim_album_  [RUN]
+[0m20:47:36.148148 [info ] [Thread-2 (]: 18 of 56 PASS not_null_fact_tracks_popularity .................................. [[32mPASS[0m in 0.23s]
+[0m20:47:36.148148 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.not_null_fact_tracks_genre_id.818b996926, now test.spotify_dbt.relationships_fact_tracks_album_id__album_id__ref_dim_album_.b2e47e2756)
+[0m20:47:36.148148 [debug] [Thread-2 (]: Finished running node test.spotify_dbt.not_null_fact_tracks_popularity.d49c4b56d6
+[0m20:47:36.148148 [debug] [Thread-1 (]: Began compiling node test.spotify_dbt.relationships_fact_tracks_album_id__album_id__ref_dim_album_.b2e47e2756
+[0m20:47:36.148148 [debug] [Thread-2 (]: Began running node test.spotify_dbt.relationships_fact_tracks_genre_id__genre_id__ref_dim_genre_.f528e295f2
+[0m20:47:36.148148 [debug] [Thread-1 (]: Writing injected SQL for node "test.spotify_dbt.relationships_fact_tracks_album_id__album_id__ref_dim_album_.b2e47e2756"
+[0m20:47:36.148148 [info ] [Thread-2 (]: 22 of 56 START test relationships_fact_tracks_genre_id__genre_id__ref_dim_genre_  [RUN]
+[0m20:47:36.148148 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.not_null_fact_tracks_popularity.d49c4b56d6, now test.spotify_dbt.relationships_fact_tracks_genre_id__genre_id__ref_dim_genre_.f528e295f2)
+[0m20:47:36.161069 [debug] [Thread-2 (]: Began compiling node test.spotify_dbt.relationships_fact_tracks_genre_id__genre_id__ref_dim_genre_.f528e295f2
+[0m20:47:36.164075 [debug] [Thread-2 (]: Writing injected SQL for node "test.spotify_dbt.relationships_fact_tracks_genre_id__genre_id__ref_dim_genre_.f528e295f2"
+[0m20:47:36.165076 [debug] [Thread-1 (]: Began executing node test.spotify_dbt.relationships_fact_tracks_album_id__album_id__ref_dim_album_.b2e47e2756
+[0m20:47:36.166075 [debug] [Thread-1 (]: Writing runtime sql for node "test.spotify_dbt.relationships_fact_tracks_album_id__album_id__ref_dim_album_.b2e47e2756"
+[0m20:47:36.167926 [debug] [Thread-2 (]: Began executing node test.spotify_dbt.relationships_fact_tracks_genre_id__genre_id__ref_dim_genre_.f528e295f2
+[0m20:47:36.168349 [debug] [Thread-2 (]: Writing runtime sql for node "test.spotify_dbt.relationships_fact_tracks_genre_id__genre_id__ref_dim_genre_.f528e295f2"
+[0m20:47:36.168349 [debug] [Thread-1 (]: Using postgres connection "test.spotify_dbt.relationships_fact_tracks_album_id__album_id__ref_dim_album_.b2e47e2756"
+[0m20:47:36.171724 [debug] [Thread-1 (]: On test.spotify_dbt.relationships_fact_tracks_album_id__album_id__ref_dim_album_.b2e47e2756: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.relationships_fact_tracks_album_id__album_id__ref_dim_album_.b2e47e2756"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select album_id as from_field
+    from "neondb"."public_marts"."fact_tracks"
+    where album_id is not null
+),
+
+parent as (
+    select album_id as to_field
+    from "neondb"."public_marts"."dim_album"
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:36.171724 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:47:36.171724 [debug] [Thread-2 (]: Using postgres connection "test.spotify_dbt.relationships_fact_tracks_genre_id__genre_id__ref_dim_genre_.f528e295f2"
+[0m20:47:36.171724 [debug] [Thread-2 (]: On test.spotify_dbt.relationships_fact_tracks_genre_id__genre_id__ref_dim_genre_.f528e295f2: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.relationships_fact_tracks_genre_id__genre_id__ref_dim_genre_.f528e295f2"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select genre_id as from_field
+    from "neondb"."public_marts"."fact_tracks"
+    where genre_id is not null
+),
+
+parent as (
+    select genre_id as to_field
+    from "neondb"."public_marts"."dim_genre"
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:36.171724 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m20:47:36.277630 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.182 seconds
+[0m20:47:36.281756 [debug] [Thread-4 (]: On test.spotify_dbt.not_null_fact_tracks_tempo.f7f19540ef: ROLLBACK
+[0m20:47:36.305117 [debug] [Thread-4 (]: On test.spotify_dbt.not_null_fact_tracks_tempo.f7f19540ef: Close
+[0m20:47:36.305117 [info ] [Thread-4 (]: 19 of 56 PASS not_null_fact_tracks_tempo ....................................... [[32mPASS[0m in 0.22s]
+[0m20:47:36.305117 [debug] [Thread-4 (]: Finished running node test.spotify_dbt.not_null_fact_tracks_tempo.f7f19540ef
+[0m20:47:36.305117 [debug] [Thread-4 (]: Began running node test.spotify_dbt.source_not_null_spotify_oltp_albums_album_id.2661144295
+[0m20:47:36.305117 [info ] [Thread-4 (]: 23 of 56 START test source_not_null_spotify_oltp_albums_album_id ............... [RUN]
+[0m20:47:36.305117 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.not_null_fact_tracks_tempo.f7f19540ef, now test.spotify_dbt.source_not_null_spotify_oltp_albums_album_id.2661144295)
+[0m20:47:36.309360 [debug] [Thread-4 (]: Began compiling node test.spotify_dbt.source_not_null_spotify_oltp_albums_album_id.2661144295
+[0m20:47:36.364042 [debug] [Thread-4 (]: Writing injected SQL for node "test.spotify_dbt.source_not_null_spotify_oltp_albums_album_id.2661144295"
+[0m20:47:36.365033 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.242 seconds
+[0m20:47:36.367016 [debug] [Thread-3 (]: On test.spotify_dbt.not_null_fact_tracks_track_id.e05f9b02ec: ROLLBACK
+[0m20:47:36.367016 [debug] [Thread-4 (]: Began executing node test.spotify_dbt.source_not_null_spotify_oltp_albums_album_id.2661144295
+[0m20:47:36.368022 [debug] [Thread-4 (]: Writing runtime sql for node "test.spotify_dbt.source_not_null_spotify_oltp_albums_album_id.2661144295"
+[0m20:47:36.368022 [debug] [Thread-4 (]: Using postgres connection "test.spotify_dbt.source_not_null_spotify_oltp_albums_album_id.2661144295"
+[0m20:47:36.368022 [debug] [Thread-4 (]: On test.spotify_dbt.source_not_null_spotify_oltp_albums_album_id.2661144295: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.source_not_null_spotify_oltp_albums_album_id.2661144295"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select album_id
+from "neondb"."public"."albums"
+where album_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:36.368022 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m20:47:36.383815 [debug] [Thread-3 (]: On test.spotify_dbt.not_null_fact_tracks_track_id.e05f9b02ec: Close
+[0m20:47:36.383815 [info ] [Thread-3 (]: 20 of 56 PASS not_null_fact_tracks_track_id .................................... [[32mPASS[0m in 0.29s]
+[0m20:47:36.383815 [debug] [Thread-3 (]: Finished running node test.spotify_dbt.not_null_fact_tracks_track_id.e05f9b02ec
+[0m20:47:36.383815 [debug] [Thread-3 (]: Began running node test.spotify_dbt.source_not_null_spotify_oltp_albums_album_name.5f9a33218f
+[0m20:47:36.383815 [info ] [Thread-3 (]: 24 of 56 START test source_not_null_spotify_oltp_albums_album_name ............. [RUN]
+[0m20:47:36.383815 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.not_null_fact_tracks_track_id.e05f9b02ec, now test.spotify_dbt.source_not_null_spotify_oltp_albums_album_name.5f9a33218f)
+[0m20:47:36.383815 [debug] [Thread-3 (]: Began compiling node test.spotify_dbt.source_not_null_spotify_oltp_albums_album_name.5f9a33218f
+[0m20:47:36.383815 [debug] [Thread-3 (]: Writing injected SQL for node "test.spotify_dbt.source_not_null_spotify_oltp_albums_album_name.5f9a33218f"
+[0m20:47:36.393752 [debug] [Thread-3 (]: Began executing node test.spotify_dbt.source_not_null_spotify_oltp_albums_album_name.5f9a33218f
+[0m20:47:36.396265 [debug] [Thread-3 (]: Writing runtime sql for node "test.spotify_dbt.source_not_null_spotify_oltp_albums_album_name.5f9a33218f"
+[0m20:47:36.396265 [debug] [Thread-3 (]: Using postgres connection "test.spotify_dbt.source_not_null_spotify_oltp_albums_album_name.5f9a33218f"
+[0m20:47:36.396265 [debug] [Thread-3 (]: On test.spotify_dbt.source_not_null_spotify_oltp_albums_album_name.5f9a33218f: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.source_not_null_spotify_oltp_albums_album_name.5f9a33218f"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select album_name
+from "neondb"."public"."albums"
+where album_name is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:36.396265 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m20:47:36.424901 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.257 seconds
+[0m20:47:36.432915 [debug] [Thread-2 (]: On test.spotify_dbt.relationships_fact_tracks_genre_id__genre_id__ref_dim_genre_.f528e295f2: ROLLBACK
+[0m20:47:36.440662 [debug] [Thread-2 (]: On test.spotify_dbt.relationships_fact_tracks_genre_id__genre_id__ref_dim_genre_.f528e295f2: Close
+[0m20:47:36.456571 [info ] [Thread-2 (]: 22 of 56 PASS relationships_fact_tracks_genre_id__genre_id__ref_dim_genre_ ..... [[32mPASS[0m in 0.29s]
+[0m20:47:36.458803 [debug] [Thread-2 (]: Finished running node test.spotify_dbt.relationships_fact_tracks_genre_id__genre_id__ref_dim_genre_.f528e295f2
+[0m20:47:36.458803 [debug] [Thread-2 (]: Began running node test.spotify_dbt.source_not_null_spotify_oltp_artists_artist_id.c6884b5bf4
+[0m20:47:36.458803 [info ] [Thread-2 (]: 25 of 56 START test source_not_null_spotify_oltp_artists_artist_id ............. [RUN]
+[0m20:47:36.463051 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.relationships_fact_tracks_genre_id__genre_id__ref_dim_genre_.f528e295f2, now test.spotify_dbt.source_not_null_spotify_oltp_artists_artist_id.c6884b5bf4)
+[0m20:47:36.463051 [debug] [Thread-2 (]: Began compiling node test.spotify_dbt.source_not_null_spotify_oltp_artists_artist_id.c6884b5bf4
+[0m20:47:36.468168 [debug] [Thread-2 (]: Writing injected SQL for node "test.spotify_dbt.source_not_null_spotify_oltp_artists_artist_id.c6884b5bf4"
+[0m20:47:36.471255 [debug] [Thread-2 (]: Began executing node test.spotify_dbt.source_not_null_spotify_oltp_artists_artist_id.c6884b5bf4
+[0m20:47:36.472169 [debug] [Thread-2 (]: Writing runtime sql for node "test.spotify_dbt.source_not_null_spotify_oltp_artists_artist_id.c6884b5bf4"
+[0m20:47:36.474976 [debug] [Thread-2 (]: Using postgres connection "test.spotify_dbt.source_not_null_spotify_oltp_artists_artist_id.c6884b5bf4"
+[0m20:47:36.474976 [debug] [Thread-2 (]: On test.spotify_dbt.source_not_null_spotify_oltp_artists_artist_id.c6884b5bf4: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.source_not_null_spotify_oltp_artists_artist_id.c6884b5bf4"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select artist_id
+from "neondb"."public"."artists"
+where artist_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:36.474976 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m20:47:36.486879 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.314 seconds
+[0m20:47:36.487881 [debug] [Thread-1 (]: On test.spotify_dbt.relationships_fact_tracks_album_id__album_id__ref_dim_album_.b2e47e2756: ROLLBACK
+[0m20:47:36.505882 [debug] [Thread-1 (]: On test.spotify_dbt.relationships_fact_tracks_album_id__album_id__ref_dim_album_.b2e47e2756: Close
+[0m20:47:36.505882 [info ] [Thread-1 (]: 21 of 56 PASS relationships_fact_tracks_album_id__album_id__ref_dim_album_ ..... [[32mPASS[0m in 0.36s]
+[0m20:47:36.507887 [debug] [Thread-1 (]: Finished running node test.spotify_dbt.relationships_fact_tracks_album_id__album_id__ref_dim_album_.b2e47e2756
+[0m20:47:36.507887 [debug] [Thread-1 (]: Began running node test.spotify_dbt.source_not_null_spotify_oltp_artists_artist_name.09cd41dde4
+[0m20:47:36.507887 [info ] [Thread-1 (]: 26 of 56 START test source_not_null_spotify_oltp_artists_artist_name ........... [RUN]
+[0m20:47:36.507887 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.relationships_fact_tracks_album_id__album_id__ref_dim_album_.b2e47e2756, now test.spotify_dbt.source_not_null_spotify_oltp_artists_artist_name.09cd41dde4)
+[0m20:47:36.507887 [debug] [Thread-1 (]: Began compiling node test.spotify_dbt.source_not_null_spotify_oltp_artists_artist_name.09cd41dde4
+[0m20:47:36.507887 [debug] [Thread-1 (]: Writing injected SQL for node "test.spotify_dbt.source_not_null_spotify_oltp_artists_artist_name.09cd41dde4"
+[0m20:47:36.507887 [debug] [Thread-1 (]: Began executing node test.spotify_dbt.source_not_null_spotify_oltp_artists_artist_name.09cd41dde4
+[0m20:47:36.516152 [debug] [Thread-1 (]: Writing runtime sql for node "test.spotify_dbt.source_not_null_spotify_oltp_artists_artist_name.09cd41dde4"
+[0m20:47:36.517241 [debug] [Thread-1 (]: Using postgres connection "test.spotify_dbt.source_not_null_spotify_oltp_artists_artist_name.09cd41dde4"
+[0m20:47:36.517241 [debug] [Thread-1 (]: On test.spotify_dbt.source_not_null_spotify_oltp_artists_artist_name.09cd41dde4: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.source_not_null_spotify_oltp_artists_artist_name.09cd41dde4"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select artist_name
+from "neondb"."public"."artists"
+where artist_name is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:36.518178 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:47:36.535215 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.163 seconds
+[0m20:47:36.537226 [debug] [Thread-4 (]: On test.spotify_dbt.source_not_null_spotify_oltp_albums_album_id.2661144295: ROLLBACK
+[0m20:47:36.542189 [debug] [Thread-4 (]: On test.spotify_dbt.source_not_null_spotify_oltp_albums_album_id.2661144295: Close
+[0m20:47:36.558179 [info ] [Thread-4 (]: 23 of 56 PASS source_not_null_spotify_oltp_albums_album_id ..................... [[32mPASS[0m in 0.25s]
+[0m20:47:36.558179 [debug] [Thread-4 (]: Finished running node test.spotify_dbt.source_not_null_spotify_oltp_albums_album_id.2661144295
+[0m20:47:36.561696 [debug] [Thread-4 (]: Began running node test.spotify_dbt.source_not_null_spotify_oltp_audio_features_danceability.f8cd4b1631
+[0m20:47:36.561696 [info ] [Thread-4 (]: 27 of 56 START test source_not_null_spotify_oltp_audio_features_danceability ... [RUN]
+[0m20:47:36.561696 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.source_not_null_spotify_oltp_albums_album_id.2661144295, now test.spotify_dbt.source_not_null_spotify_oltp_audio_features_danceability.f8cd4b1631)
+[0m20:47:36.561696 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.167 seconds
+[0m20:47:36.561696 [debug] [Thread-4 (]: Began compiling node test.spotify_dbt.source_not_null_spotify_oltp_audio_features_danceability.f8cd4b1631
+[0m20:47:36.566607 [debug] [Thread-3 (]: On test.spotify_dbt.source_not_null_spotify_oltp_albums_album_name.5f9a33218f: ROLLBACK
+[0m20:47:36.570621 [debug] [Thread-4 (]: Writing injected SQL for node "test.spotify_dbt.source_not_null_spotify_oltp_audio_features_danceability.f8cd4b1631"
+[0m20:47:36.570621 [debug] [Thread-4 (]: Began executing node test.spotify_dbt.source_not_null_spotify_oltp_audio_features_danceability.f8cd4b1631
+[0m20:47:36.575895 [debug] [Thread-4 (]: Writing runtime sql for node "test.spotify_dbt.source_not_null_spotify_oltp_audio_features_danceability.f8cd4b1631"
+[0m20:47:36.576896 [debug] [Thread-4 (]: Using postgres connection "test.spotify_dbt.source_not_null_spotify_oltp_audio_features_danceability.f8cd4b1631"
+[0m20:47:36.577897 [debug] [Thread-4 (]: On test.spotify_dbt.source_not_null_spotify_oltp_audio_features_danceability.f8cd4b1631: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.source_not_null_spotify_oltp_audio_features_danceability.f8cd4b1631"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select danceability
+from "neondb"."public"."audio_features"
+where danceability is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:36.577897 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m20:47:36.589848 [debug] [Thread-3 (]: On test.spotify_dbt.source_not_null_spotify_oltp_albums_album_name.5f9a33218f: Close
+[0m20:47:36.590853 [info ] [Thread-3 (]: 24 of 56 PASS source_not_null_spotify_oltp_albums_album_name ................... [[32mPASS[0m in 0.21s]
+[0m20:47:36.590853 [debug] [Thread-3 (]: Finished running node test.spotify_dbt.source_not_null_spotify_oltp_albums_album_name.5f9a33218f
+[0m20:47:36.591854 [debug] [Thread-3 (]: Began running node test.spotify_dbt.source_not_null_spotify_oltp_audio_features_energy.842cc19c83
+[0m20:47:36.591854 [info ] [Thread-3 (]: 28 of 56 START test source_not_null_spotify_oltp_audio_features_energy ......... [RUN]
+[0m20:47:36.592855 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.source_not_null_spotify_oltp_albums_album_name.5f9a33218f, now test.spotify_dbt.source_not_null_spotify_oltp_audio_features_energy.842cc19c83)
+[0m20:47:36.592855 [debug] [Thread-3 (]: Began compiling node test.spotify_dbt.source_not_null_spotify_oltp_audio_features_energy.842cc19c83
+[0m20:47:36.596851 [debug] [Thread-3 (]: Writing injected SQL for node "test.spotify_dbt.source_not_null_spotify_oltp_audio_features_energy.842cc19c83"
+[0m20:47:36.598095 [debug] [Thread-3 (]: Began executing node test.spotify_dbt.source_not_null_spotify_oltp_audio_features_energy.842cc19c83
+[0m20:47:36.600116 [debug] [Thread-3 (]: Writing runtime sql for node "test.spotify_dbt.source_not_null_spotify_oltp_audio_features_energy.842cc19c83"
+[0m20:47:36.601294 [debug] [Thread-3 (]: Using postgres connection "test.spotify_dbt.source_not_null_spotify_oltp_audio_features_energy.842cc19c83"
+[0m20:47:36.602307 [debug] [Thread-3 (]: On test.spotify_dbt.source_not_null_spotify_oltp_audio_features_energy.842cc19c83: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.source_not_null_spotify_oltp_audio_features_energy.842cc19c83"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select energy
+from "neondb"."public"."audio_features"
+where energy is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:36.602307 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m20:47:36.664691 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.189 seconds
+[0m20:47:36.666701 [debug] [Thread-2 (]: On test.spotify_dbt.source_not_null_spotify_oltp_artists_artist_id.c6884b5bf4: ROLLBACK
+[0m20:47:36.678115 [debug] [Thread-2 (]: On test.spotify_dbt.source_not_null_spotify_oltp_artists_artist_id.c6884b5bf4: Close
+[0m20:47:36.689718 [info ] [Thread-2 (]: 25 of 56 PASS source_not_null_spotify_oltp_artists_artist_id ................... [[32mPASS[0m in 0.23s]
+[0m20:47:36.691734 [debug] [Thread-2 (]: Finished running node test.spotify_dbt.source_not_null_spotify_oltp_artists_artist_id.c6884b5bf4
+[0m20:47:36.691734 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.175 seconds
+[0m20:47:36.693924 [debug] [Thread-2 (]: Began running node test.spotify_dbt.source_not_null_spotify_oltp_audio_features_tempo.6e78a31d81
+[0m20:47:36.695936 [debug] [Thread-1 (]: On test.spotify_dbt.source_not_null_spotify_oltp_artists_artist_name.09cd41dde4: ROLLBACK
+[0m20:47:36.695936 [info ] [Thread-2 (]: 29 of 56 START test source_not_null_spotify_oltp_audio_features_tempo .......... [RUN]
+[0m20:47:36.697945 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.source_not_null_spotify_oltp_artists_artist_id.c6884b5bf4, now test.spotify_dbt.source_not_null_spotify_oltp_audio_features_tempo.6e78a31d81)
+[0m20:47:36.698634 [debug] [Thread-2 (]: Began compiling node test.spotify_dbt.source_not_null_spotify_oltp_audio_features_tempo.6e78a31d81
+[0m20:47:36.702797 [debug] [Thread-2 (]: Writing injected SQL for node "test.spotify_dbt.source_not_null_spotify_oltp_audio_features_tempo.6e78a31d81"
+[0m20:47:36.704797 [debug] [Thread-2 (]: Began executing node test.spotify_dbt.source_not_null_spotify_oltp_audio_features_tempo.6e78a31d81
+[0m20:47:36.705499 [debug] [Thread-2 (]: Writing runtime sql for node "test.spotify_dbt.source_not_null_spotify_oltp_audio_features_tempo.6e78a31d81"
+[0m20:47:36.705499 [debug] [Thread-2 (]: Using postgres connection "test.spotify_dbt.source_not_null_spotify_oltp_audio_features_tempo.6e78a31d81"
+[0m20:47:36.705499 [debug] [Thread-2 (]: On test.spotify_dbt.source_not_null_spotify_oltp_audio_features_tempo.6e78a31d81: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.source_not_null_spotify_oltp_audio_features_tempo.6e78a31d81"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select tempo
+from "neondb"."public"."audio_features"
+where tempo is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:36.705499 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m20:47:36.713020 [debug] [Thread-1 (]: On test.spotify_dbt.source_not_null_spotify_oltp_artists_artist_name.09cd41dde4: Close
+[0m20:47:36.713020 [info ] [Thread-1 (]: 26 of 56 PASS source_not_null_spotify_oltp_artists_artist_name ................. [[32mPASS[0m in 0.21s]
+[0m20:47:36.713020 [debug] [Thread-1 (]: Finished running node test.spotify_dbt.source_not_null_spotify_oltp_artists_artist_name.09cd41dde4
+[0m20:47:36.713020 [debug] [Thread-1 (]: Began running node test.spotify_dbt.source_not_null_spotify_oltp_audio_features_track_id.407a938501
+[0m20:47:36.713020 [info ] [Thread-1 (]: 30 of 56 START test source_not_null_spotify_oltp_audio_features_track_id ....... [RUN]
+[0m20:47:36.718353 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.source_not_null_spotify_oltp_artists_artist_name.09cd41dde4, now test.spotify_dbt.source_not_null_spotify_oltp_audio_features_track_id.407a938501)
+[0m20:47:36.718860 [debug] [Thread-1 (]: Began compiling node test.spotify_dbt.source_not_null_spotify_oltp_audio_features_track_id.407a938501
+[0m20:47:36.722971 [debug] [Thread-1 (]: Writing injected SQL for node "test.spotify_dbt.source_not_null_spotify_oltp_audio_features_track_id.407a938501"
+[0m20:47:36.726101 [debug] [Thread-1 (]: Began executing node test.spotify_dbt.source_not_null_spotify_oltp_audio_features_track_id.407a938501
+[0m20:47:36.729259 [debug] [Thread-1 (]: Writing runtime sql for node "test.spotify_dbt.source_not_null_spotify_oltp_audio_features_track_id.407a938501"
+[0m20:47:36.730257 [debug] [Thread-1 (]: Using postgres connection "test.spotify_dbt.source_not_null_spotify_oltp_audio_features_track_id.407a938501"
+[0m20:47:36.731219 [debug] [Thread-1 (]: On test.spotify_dbt.source_not_null_spotify_oltp_audio_features_track_id.407a938501: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.source_not_null_spotify_oltp_audio_features_track_id.407a938501"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select track_id
+from "neondb"."public"."audio_features"
+where track_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:36.731219 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:47:36.733481 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.156 seconds
+[0m20:47:36.733481 [debug] [Thread-4 (]: On test.spotify_dbt.source_not_null_spotify_oltp_audio_features_danceability.f8cd4b1631: ROLLBACK
+[0m20:47:36.754243 [debug] [Thread-4 (]: On test.spotify_dbt.source_not_null_spotify_oltp_audio_features_danceability.f8cd4b1631: Close
+[0m20:47:36.754243 [info ] [Thread-4 (]: 27 of 56 PASS source_not_null_spotify_oltp_audio_features_danceability ......... [[32mPASS[0m in 0.19s]
+[0m20:47:36.754243 [debug] [Thread-4 (]: Finished running node test.spotify_dbt.source_not_null_spotify_oltp_audio_features_danceability.f8cd4b1631
+[0m20:47:36.754243 [debug] [Thread-4 (]: Began running node test.spotify_dbt.source_not_null_spotify_oltp_genres_genre_id.146201fb00
+[0m20:47:36.754243 [info ] [Thread-4 (]: 31 of 56 START test source_not_null_spotify_oltp_genres_genre_id ............... [RUN]
+[0m20:47:36.754243 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.source_not_null_spotify_oltp_audio_features_danceability.f8cd4b1631, now test.spotify_dbt.source_not_null_spotify_oltp_genres_genre_id.146201fb00)
+[0m20:47:36.754243 [debug] [Thread-4 (]: Began compiling node test.spotify_dbt.source_not_null_spotify_oltp_genres_genre_id.146201fb00
+[0m20:47:36.761607 [debug] [Thread-4 (]: Writing injected SQL for node "test.spotify_dbt.source_not_null_spotify_oltp_genres_genre_id.146201fb00"
+[0m20:47:36.762599 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.160 seconds
+[0m20:47:36.764078 [debug] [Thread-3 (]: On test.spotify_dbt.source_not_null_spotify_oltp_audio_features_energy.842cc19c83: ROLLBACK
+[0m20:47:36.765106 [debug] [Thread-4 (]: Began executing node test.spotify_dbt.source_not_null_spotify_oltp_genres_genre_id.146201fb00
+[0m20:47:36.768517 [debug] [Thread-4 (]: Writing runtime sql for node "test.spotify_dbt.source_not_null_spotify_oltp_genres_genre_id.146201fb00"
+[0m20:47:36.768517 [debug] [Thread-4 (]: Using postgres connection "test.spotify_dbt.source_not_null_spotify_oltp_genres_genre_id.146201fb00"
+[0m20:47:36.768517 [debug] [Thread-4 (]: On test.spotify_dbt.source_not_null_spotify_oltp_genres_genre_id.146201fb00: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.source_not_null_spotify_oltp_genres_genre_id.146201fb00"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select genre_id
+from "neondb"."public"."genres"
+where genre_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:36.768517 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m20:47:36.782456 [debug] [Thread-3 (]: On test.spotify_dbt.source_not_null_spotify_oltp_audio_features_energy.842cc19c83: Close
+[0m20:47:36.783562 [info ] [Thread-3 (]: 28 of 56 PASS source_not_null_spotify_oltp_audio_features_energy ............... [[32mPASS[0m in 0.19s]
+[0m20:47:36.784459 [debug] [Thread-3 (]: Finished running node test.spotify_dbt.source_not_null_spotify_oltp_audio_features_energy.842cc19c83
+[0m20:47:36.784459 [debug] [Thread-3 (]: Began running node test.spotify_dbt.source_not_null_spotify_oltp_genres_genre_name.e2c3d7a900
+[0m20:47:36.785464 [info ] [Thread-3 (]: 32 of 56 START test source_not_null_spotify_oltp_genres_genre_name ............. [RUN]
+[0m20:47:36.785464 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.source_not_null_spotify_oltp_audio_features_energy.842cc19c83, now test.spotify_dbt.source_not_null_spotify_oltp_genres_genre_name.e2c3d7a900)
+[0m20:47:36.786465 [debug] [Thread-3 (]: Began compiling node test.spotify_dbt.source_not_null_spotify_oltp_genres_genre_name.e2c3d7a900
+[0m20:47:36.788464 [debug] [Thread-3 (]: Writing injected SQL for node "test.spotify_dbt.source_not_null_spotify_oltp_genres_genre_name.e2c3d7a900"
+[0m20:47:36.788464 [debug] [Thread-3 (]: Began executing node test.spotify_dbt.source_not_null_spotify_oltp_genres_genre_name.e2c3d7a900
+[0m20:47:36.788464 [debug] [Thread-3 (]: Writing runtime sql for node "test.spotify_dbt.source_not_null_spotify_oltp_genres_genre_name.e2c3d7a900"
+[0m20:47:36.788464 [debug] [Thread-3 (]: Using postgres connection "test.spotify_dbt.source_not_null_spotify_oltp_genres_genre_name.e2c3d7a900"
+[0m20:47:36.788464 [debug] [Thread-3 (]: On test.spotify_dbt.source_not_null_spotify_oltp_genres_genre_name.e2c3d7a900: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.source_not_null_spotify_oltp_genres_genre_name.e2c3d7a900"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select genre_name
+from "neondb"."public"."genres"
+where genre_name is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:36.788464 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m20:47:36.889909 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.166 seconds
+[0m20:47:36.889909 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.189 seconds
+[0m20:47:36.900723 [debug] [Thread-1 (]: On test.spotify_dbt.source_not_null_spotify_oltp_audio_features_track_id.407a938501: ROLLBACK
+[0m20:47:36.903746 [debug] [Thread-2 (]: On test.spotify_dbt.source_not_null_spotify_oltp_audio_features_tempo.6e78a31d81: ROLLBACK
+[0m20:47:36.919566 [debug] [Thread-2 (]: On test.spotify_dbt.source_not_null_spotify_oltp_audio_features_tempo.6e78a31d81: Close
+[0m20:47:36.919566 [debug] [Thread-1 (]: On test.spotify_dbt.source_not_null_spotify_oltp_audio_features_track_id.407a938501: Close
+[0m20:47:36.926015 [info ] [Thread-2 (]: 29 of 56 PASS source_not_null_spotify_oltp_audio_features_tempo ................ [[32mPASS[0m in 0.23s]
+[0m20:47:36.928028 [info ] [Thread-1 (]: 30 of 56 PASS source_not_null_spotify_oltp_audio_features_track_id ............. [[32mPASS[0m in 0.21s]
+[0m20:47:36.928028 [debug] [Thread-2 (]: Finished running node test.spotify_dbt.source_not_null_spotify_oltp_audio_features_tempo.6e78a31d81
+[0m20:47:36.928028 [debug] [Thread-1 (]: Finished running node test.spotify_dbt.source_not_null_spotify_oltp_audio_features_track_id.407a938501
+[0m20:47:36.932103 [debug] [Thread-2 (]: Began running node test.spotify_dbt.source_not_null_spotify_oltp_track_artists_artist_id.e8640e28b2
+[0m20:47:36.932103 [debug] [Thread-1 (]: Began running node test.spotify_dbt.source_not_null_spotify_oltp_track_artists_track_id.ac4cfb772f
+[0m20:47:36.932103 [info ] [Thread-2 (]: 33 of 56 START test source_not_null_spotify_oltp_track_artists_artist_id ....... [RUN]
+[0m20:47:36.935247 [info ] [Thread-1 (]: 34 of 56 START test source_not_null_spotify_oltp_track_artists_track_id ........ [RUN]
+[0m20:47:36.936083 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.source_not_null_spotify_oltp_audio_features_tempo.6e78a31d81, now test.spotify_dbt.source_not_null_spotify_oltp_track_artists_artist_id.e8640e28b2)
+[0m20:47:36.937490 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.source_not_null_spotify_oltp_audio_features_track_id.407a938501, now test.spotify_dbt.source_not_null_spotify_oltp_track_artists_track_id.ac4cfb772f)
+[0m20:47:36.938242 [debug] [Thread-2 (]: Began compiling node test.spotify_dbt.source_not_null_spotify_oltp_track_artists_artist_id.e8640e28b2
+[0m20:47:36.938242 [debug] [Thread-1 (]: Began compiling node test.spotify_dbt.source_not_null_spotify_oltp_track_artists_track_id.ac4cfb772f
+[0m20:47:36.941156 [debug] [Thread-2 (]: Writing injected SQL for node "test.spotify_dbt.source_not_null_spotify_oltp_track_artists_artist_id.e8640e28b2"
+[0m20:47:36.941156 [debug] [Thread-1 (]: Writing injected SQL for node "test.spotify_dbt.source_not_null_spotify_oltp_track_artists_track_id.ac4cfb772f"
+[0m20:47:36.941156 [debug] [Thread-1 (]: Began executing node test.spotify_dbt.source_not_null_spotify_oltp_track_artists_track_id.ac4cfb772f
+[0m20:47:36.941156 [debug] [Thread-2 (]: Began executing node test.spotify_dbt.source_not_null_spotify_oltp_track_artists_artist_id.e8640e28b2
+[0m20:47:36.951470 [debug] [Thread-1 (]: Writing runtime sql for node "test.spotify_dbt.source_not_null_spotify_oltp_track_artists_track_id.ac4cfb772f"
+[0m20:47:36.952470 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.158 seconds
+[0m20:47:36.954594 [debug] [Thread-2 (]: Writing runtime sql for node "test.spotify_dbt.source_not_null_spotify_oltp_track_artists_artist_id.e8640e28b2"
+[0m20:47:36.956015 [debug] [Thread-3 (]: On test.spotify_dbt.source_not_null_spotify_oltp_genres_genre_name.e2c3d7a900: ROLLBACK
+[0m20:47:36.957012 [debug] [Thread-1 (]: Using postgres connection "test.spotify_dbt.source_not_null_spotify_oltp_track_artists_track_id.ac4cfb772f"
+[0m20:47:36.957012 [debug] [Thread-2 (]: Using postgres connection "test.spotify_dbt.source_not_null_spotify_oltp_track_artists_artist_id.e8640e28b2"
+[0m20:47:36.957012 [debug] [Thread-1 (]: On test.spotify_dbt.source_not_null_spotify_oltp_track_artists_track_id.ac4cfb772f: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.source_not_null_spotify_oltp_track_artists_track_id.ac4cfb772f"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select track_id
+from "neondb"."public"."track_artists"
+where track_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:36.957012 [debug] [Thread-2 (]: On test.spotify_dbt.source_not_null_spotify_oltp_track_artists_artist_id.e8640e28b2: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.source_not_null_spotify_oltp_track_artists_artist_id.e8640e28b2"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select artist_id
+from "neondb"."public"."track_artists"
+where artist_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:36.957012 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:47:36.957012 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m20:47:36.974569 [debug] [Thread-3 (]: On test.spotify_dbt.source_not_null_spotify_oltp_genres_genre_name.e2c3d7a900: Close
+[0m20:47:36.975606 [info ] [Thread-3 (]: 32 of 56 PASS source_not_null_spotify_oltp_genres_genre_name ................... [[32mPASS[0m in 0.19s]
+[0m20:47:36.976603 [debug] [Thread-3 (]: Finished running node test.spotify_dbt.source_not_null_spotify_oltp_genres_genre_name.e2c3d7a900
+[0m20:47:36.976603 [debug] [Thread-3 (]: Began running node test.spotify_dbt.source_not_null_spotify_oltp_tracks_duration_ms.156ff3948b
+[0m20:47:36.977603 [info ] [Thread-3 (]: 35 of 56 START test source_not_null_spotify_oltp_tracks_duration_ms ............ [RUN]
+[0m20:47:36.977603 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.source_not_null_spotify_oltp_genres_genre_name.e2c3d7a900, now test.spotify_dbt.source_not_null_spotify_oltp_tracks_duration_ms.156ff3948b)
+[0m20:47:36.978709 [debug] [Thread-3 (]: Began compiling node test.spotify_dbt.source_not_null_spotify_oltp_tracks_duration_ms.156ff3948b
+[0m20:47:36.982135 [debug] [Thread-3 (]: Writing injected SQL for node "test.spotify_dbt.source_not_null_spotify_oltp_tracks_duration_ms.156ff3948b"
+[0m20:47:36.982135 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.211 seconds
+[0m20:47:36.984131 [debug] [Thread-4 (]: On test.spotify_dbt.source_not_null_spotify_oltp_genres_genre_id.146201fb00: ROLLBACK
+[0m20:47:36.984131 [debug] [Thread-3 (]: Began executing node test.spotify_dbt.source_not_null_spotify_oltp_tracks_duration_ms.156ff3948b
+[0m20:47:36.986438 [debug] [Thread-3 (]: Writing runtime sql for node "test.spotify_dbt.source_not_null_spotify_oltp_tracks_duration_ms.156ff3948b"
+[0m20:47:36.986438 [debug] [Thread-3 (]: Using postgres connection "test.spotify_dbt.source_not_null_spotify_oltp_tracks_duration_ms.156ff3948b"
+[0m20:47:36.988444 [debug] [Thread-3 (]: On test.spotify_dbt.source_not_null_spotify_oltp_tracks_duration_ms.156ff3948b: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.source_not_null_spotify_oltp_tracks_duration_ms.156ff3948b"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select duration_ms
+from "neondb"."public"."tracks"
+where duration_ms is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:36.988444 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m20:47:37.006434 [debug] [Thread-4 (]: On test.spotify_dbt.source_not_null_spotify_oltp_genres_genre_id.146201fb00: Close
+[0m20:47:37.006434 [info ] [Thread-4 (]: 31 of 56 PASS source_not_null_spotify_oltp_genres_genre_id ..................... [[32mPASS[0m in 0.25s]
+[0m20:47:37.006434 [debug] [Thread-4 (]: Finished running node test.spotify_dbt.source_not_null_spotify_oltp_genres_genre_id.146201fb00
+[0m20:47:37.006434 [debug] [Thread-4 (]: Began running node test.spotify_dbt.source_not_null_spotify_oltp_tracks_popularity.2edbdb8a65
+[0m20:47:37.006434 [info ] [Thread-4 (]: 36 of 56 START test source_not_null_spotify_oltp_tracks_popularity ............. [RUN]
+[0m20:47:37.006434 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.source_not_null_spotify_oltp_genres_genre_id.146201fb00, now test.spotify_dbt.source_not_null_spotify_oltp_tracks_popularity.2edbdb8a65)
+[0m20:47:37.006434 [debug] [Thread-4 (]: Began compiling node test.spotify_dbt.source_not_null_spotify_oltp_tracks_popularity.2edbdb8a65
+[0m20:47:37.013758 [debug] [Thread-4 (]: Writing injected SQL for node "test.spotify_dbt.source_not_null_spotify_oltp_tracks_popularity.2edbdb8a65"
+[0m20:47:37.017298 [debug] [Thread-4 (]: Began executing node test.spotify_dbt.source_not_null_spotify_oltp_tracks_popularity.2edbdb8a65
+[0m20:47:37.019601 [debug] [Thread-4 (]: Writing runtime sql for node "test.spotify_dbt.source_not_null_spotify_oltp_tracks_popularity.2edbdb8a65"
+[0m20:47:37.020664 [debug] [Thread-4 (]: Using postgres connection "test.spotify_dbt.source_not_null_spotify_oltp_tracks_popularity.2edbdb8a65"
+[0m20:47:37.020664 [debug] [Thread-4 (]: On test.spotify_dbt.source_not_null_spotify_oltp_tracks_popularity.2edbdb8a65: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.source_not_null_spotify_oltp_tracks_popularity.2edbdb8a65"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select popularity
+from "neondb"."public"."tracks"
+where popularity is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:37.021775 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m20:47:37.102853 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.157 seconds
+[0m20:47:37.102853 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.159 seconds
+[0m20:47:37.121255 [debug] [Thread-2 (]: On test.spotify_dbt.source_not_null_spotify_oltp_track_artists_artist_id.e8640e28b2: ROLLBACK
+[0m20:47:37.123267 [debug] [Thread-1 (]: On test.spotify_dbt.source_not_null_spotify_oltp_track_artists_track_id.ac4cfb772f: ROLLBACK
+[0m20:47:37.145621 [debug] [Thread-1 (]: On test.spotify_dbt.source_not_null_spotify_oltp_track_artists_track_id.ac4cfb772f: Close
+[0m20:47:37.145621 [debug] [Thread-2 (]: On test.spotify_dbt.source_not_null_spotify_oltp_track_artists_artist_id.e8640e28b2: Close
+[0m20:47:37.147630 [info ] [Thread-1 (]: 34 of 56 PASS source_not_null_spotify_oltp_track_artists_track_id .............. [[32mPASS[0m in 0.21s]
+[0m20:47:37.149634 [info ] [Thread-2 (]: 33 of 56 PASS source_not_null_spotify_oltp_track_artists_artist_id ............. [[32mPASS[0m in 0.21s]
+[0m20:47:37.150638 [debug] [Thread-1 (]: Finished running node test.spotify_dbt.source_not_null_spotify_oltp_track_artists_track_id.ac4cfb772f
+[0m20:47:37.152643 [debug] [Thread-2 (]: Finished running node test.spotify_dbt.source_not_null_spotify_oltp_track_artists_artist_id.e8640e28b2
+[0m20:47:37.152643 [debug] [Thread-1 (]: Began running node test.spotify_dbt.source_not_null_spotify_oltp_tracks_track_id.c987e572d0
+[0m20:47:37.152643 [debug] [Thread-2 (]: Began running node test.spotify_dbt.source_not_null_spotify_oltp_tracks_track_name.f9a9543172
+[0m20:47:37.152643 [info ] [Thread-1 (]: 37 of 56 START test source_not_null_spotify_oltp_tracks_track_id ............... [RUN]
+[0m20:47:37.156485 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.source_not_null_spotify_oltp_track_artists_track_id.ac4cfb772f, now test.spotify_dbt.source_not_null_spotify_oltp_tracks_track_id.c987e572d0)
+[0m20:47:37.156485 [debug] [Thread-1 (]: Began compiling node test.spotify_dbt.source_not_null_spotify_oltp_tracks_track_id.c987e572d0
+[0m20:47:37.159809 [debug] [Thread-1 (]: Writing injected SQL for node "test.spotify_dbt.source_not_null_spotify_oltp_tracks_track_id.c987e572d0"
+[0m20:47:37.161551 [debug] [Thread-1 (]: Began executing node test.spotify_dbt.source_not_null_spotify_oltp_tracks_track_id.c987e572d0
+[0m20:47:37.152643 [info ] [Thread-2 (]: 38 of 56 START test source_not_null_spotify_oltp_tracks_track_name ............. [RUN]
+[0m20:47:37.161551 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.174 seconds
+[0m20:47:37.163556 [debug] [Thread-1 (]: Writing runtime sql for node "test.spotify_dbt.source_not_null_spotify_oltp_tracks_track_id.c987e572d0"
+[0m20:47:37.163556 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.source_not_null_spotify_oltp_track_artists_artist_id.e8640e28b2, now test.spotify_dbt.source_not_null_spotify_oltp_tracks_track_name.f9a9543172)
+[0m20:47:37.163556 [debug] [Thread-3 (]: On test.spotify_dbt.source_not_null_spotify_oltp_tracks_duration_ms.156ff3948b: ROLLBACK
+[0m20:47:37.168166 [debug] [Thread-2 (]: Began compiling node test.spotify_dbt.source_not_null_spotify_oltp_tracks_track_name.f9a9543172
+[0m20:47:37.168166 [debug] [Thread-1 (]: Using postgres connection "test.spotify_dbt.source_not_null_spotify_oltp_tracks_track_id.c987e572d0"
+[0m20:47:37.173037 [debug] [Thread-1 (]: On test.spotify_dbt.source_not_null_spotify_oltp_tracks_track_id.c987e572d0: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.source_not_null_spotify_oltp_tracks_track_id.c987e572d0"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select track_id
+from "neondb"."public"."tracks"
+where track_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:37.173037 [debug] [Thread-2 (]: Writing injected SQL for node "test.spotify_dbt.source_not_null_spotify_oltp_tracks_track_name.f9a9543172"
+[0m20:47:37.175044 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:47:37.177530 [debug] [Thread-2 (]: Began executing node test.spotify_dbt.source_not_null_spotify_oltp_tracks_track_name.f9a9543172
+[0m20:47:37.180823 [debug] [Thread-2 (]: Writing runtime sql for node "test.spotify_dbt.source_not_null_spotify_oltp_tracks_track_name.f9a9543172"
+[0m20:47:37.182831 [debug] [Thread-2 (]: Using postgres connection "test.spotify_dbt.source_not_null_spotify_oltp_tracks_track_name.f9a9543172"
+[0m20:47:37.183491 [debug] [Thread-2 (]: On test.spotify_dbt.source_not_null_spotify_oltp_tracks_track_name.f9a9543172: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.source_not_null_spotify_oltp_tracks_track_name.f9a9543172"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select track_name
+from "neondb"."public"."tracks"
+where track_name is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:37.183491 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m20:47:37.187944 [debug] [Thread-3 (]: On test.spotify_dbt.source_not_null_spotify_oltp_tracks_duration_ms.156ff3948b: Close
+[0m20:47:37.187944 [info ] [Thread-3 (]: 35 of 56 PASS source_not_null_spotify_oltp_tracks_duration_ms .................. [[32mPASS[0m in 0.21s]
+[0m20:47:37.190439 [debug] [Thread-3 (]: Finished running node test.spotify_dbt.source_not_null_spotify_oltp_tracks_duration_ms.156ff3948b
+[0m20:47:37.191446 [debug] [Thread-3 (]: Began running node test.spotify_dbt.source_relationships_spotify_oltp_audio_features_track_id__track_id__source_spotify_oltp_tracks_.4b5b93d571
+[0m20:47:37.191446 [info ] [Thread-3 (]: 39 of 56 START test source_relationships_spotify_oltp_audio_features_track_id__track_id__source_spotify_oltp_tracks_  [RUN]
+[0m20:47:37.192445 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.source_not_null_spotify_oltp_tracks_duration_ms.156ff3948b, now test.spotify_dbt.source_relationships_spotify_oltp_audio_features_track_id__track_id__source_spotify_oltp_tracks_.4b5b93d571)
+[0m20:47:37.193445 [debug] [Thread-3 (]: Began compiling node test.spotify_dbt.source_relationships_spotify_oltp_audio_features_track_id__track_id__source_spotify_oltp_tracks_.4b5b93d571
+[0m20:47:37.197446 [debug] [Thread-3 (]: Writing injected SQL for node "test.spotify_dbt.source_relationships_spotify_oltp_audio_features_track_id__track_id__source_spotify_oltp_tracks_.4b5b93d571"
+[0m20:47:37.199630 [debug] [Thread-3 (]: Began executing node test.spotify_dbt.source_relationships_spotify_oltp_audio_features_track_id__track_id__source_spotify_oltp_tracks_.4b5b93d571
+[0m20:47:37.203325 [debug] [Thread-3 (]: Writing runtime sql for node "test.spotify_dbt.source_relationships_spotify_oltp_audio_features_track_id__track_id__source_spotify_oltp_tracks_.4b5b93d571"
+[0m20:47:37.205036 [debug] [Thread-3 (]: Using postgres connection "test.spotify_dbt.source_relationships_spotify_oltp_audio_features_track_id__track_id__source_spotify_oltp_tracks_.4b5b93d571"
+[0m20:47:37.205665 [debug] [Thread-3 (]: On test.spotify_dbt.source_relationships_spotify_oltp_audio_features_track_id__track_id__source_spotify_oltp_tracks_.4b5b93d571: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.source_relationships_spotify_oltp_audio_features_track_id__track_id__source_spotify_oltp_tracks_.4b5b93d571"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select track_id as from_field
+    from "neondb"."public"."audio_features"
+    where track_id is not null
+),
+
+parent as (
+    select track_id as to_field
+    from "neondb"."public"."tracks"
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:37.206067 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m20:47:37.215534 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.194 seconds
+[0m20:47:37.215534 [debug] [Thread-4 (]: On test.spotify_dbt.source_not_null_spotify_oltp_tracks_popularity.2edbdb8a65: ROLLBACK
+[0m20:47:37.232524 [debug] [Thread-4 (]: On test.spotify_dbt.source_not_null_spotify_oltp_tracks_popularity.2edbdb8a65: Close
+[0m20:47:37.232524 [info ] [Thread-4 (]: 36 of 56 PASS source_not_null_spotify_oltp_tracks_popularity ................... [[32mPASS[0m in 0.23s]
+[0m20:47:37.232524 [debug] [Thread-4 (]: Finished running node test.spotify_dbt.source_not_null_spotify_oltp_tracks_popularity.2edbdb8a65
+[0m20:47:37.232524 [debug] [Thread-4 (]: Began running node test.spotify_dbt.source_relationships_spotify_oltp_track_artists_artist_id__artist_id__source_spotify_oltp_artists_.959d149100
+[0m20:47:37.232524 [info ] [Thread-4 (]: 40 of 56 START test source_relationships_spotify_oltp_track_artists_artist_id__artist_id__source_spotify_oltp_artists_  [RUN]
+[0m20:47:37.232524 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.source_not_null_spotify_oltp_tracks_popularity.2edbdb8a65, now test.spotify_dbt.source_relationships_spotify_oltp_track_artists_artist_id__artist_id__source_spotify_oltp_artists_.959d149100)
+[0m20:47:37.232524 [debug] [Thread-4 (]: Began compiling node test.spotify_dbt.source_relationships_spotify_oltp_track_artists_artist_id__artist_id__source_spotify_oltp_artists_.959d149100
+[0m20:47:37.246809 [debug] [Thread-4 (]: Writing injected SQL for node "test.spotify_dbt.source_relationships_spotify_oltp_track_artists_artist_id__artist_id__source_spotify_oltp_artists_.959d149100"
+[0m20:47:37.249031 [debug] [Thread-4 (]: Began executing node test.spotify_dbt.source_relationships_spotify_oltp_track_artists_artist_id__artist_id__source_spotify_oltp_artists_.959d149100
+[0m20:47:37.249989 [debug] [Thread-4 (]: Writing runtime sql for node "test.spotify_dbt.source_relationships_spotify_oltp_track_artists_artist_id__artist_id__source_spotify_oltp_artists_.959d149100"
+[0m20:47:37.253048 [debug] [Thread-4 (]: Using postgres connection "test.spotify_dbt.source_relationships_spotify_oltp_track_artists_artist_id__artist_id__source_spotify_oltp_artists_.959d149100"
+[0m20:47:37.253048 [debug] [Thread-4 (]: On test.spotify_dbt.source_relationships_spotify_oltp_track_artists_artist_id__artist_id__source_spotify_oltp_artists_.959d149100: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.source_relationships_spotify_oltp_track_artists_artist_id__artist_id__source_spotify_oltp_artists_.959d149100"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select artist_id as from_field
+    from "neondb"."public"."track_artists"
+    where artist_id is not null
+),
+
+parent as (
+    select artist_id as to_field
+    from "neondb"."public"."artists"
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:37.254281 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m20:47:37.323296 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.163 seconds
+[0m20:47:37.342435 [debug] [Thread-1 (]: On test.spotify_dbt.source_not_null_spotify_oltp_tracks_track_id.c987e572d0: ROLLBACK
+[0m20:47:37.344447 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.170 seconds
+[0m20:47:37.355178 [debug] [Thread-2 (]: On test.spotify_dbt.source_not_null_spotify_oltp_tracks_track_name.f9a9543172: ROLLBACK
+[0m20:47:37.359553 [debug] [Thread-1 (]: On test.spotify_dbt.source_not_null_spotify_oltp_tracks_track_id.c987e572d0: Close
+[0m20:47:37.364245 [info ] [Thread-1 (]: 37 of 56 PASS source_not_null_spotify_oltp_tracks_track_id ..................... [[32mPASS[0m in 0.21s]
+[0m20:47:37.364245 [debug] [Thread-1 (]: Finished running node test.spotify_dbt.source_not_null_spotify_oltp_tracks_track_id.c987e572d0
+[0m20:47:37.364245 [debug] [Thread-1 (]: Began running node test.spotify_dbt.source_relationships_spotify_oltp_track_artists_track_id__track_id__source_spotify_oltp_tracks_.4d354d4fcc
+[0m20:47:37.364245 [info ] [Thread-1 (]: 41 of 56 START test source_relationships_spotify_oltp_track_artists_track_id__track_id__source_spotify_oltp_tracks_  [RUN]
+[0m20:47:37.364245 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.source_not_null_spotify_oltp_tracks_track_id.c987e572d0, now test.spotify_dbt.source_relationships_spotify_oltp_track_artists_track_id__track_id__source_spotify_oltp_tracks_.4d354d4fcc)
+[0m20:47:37.364245 [debug] [Thread-1 (]: Began compiling node test.spotify_dbt.source_relationships_spotify_oltp_track_artists_track_id__track_id__source_spotify_oltp_tracks_.4d354d4fcc
+[0m20:47:37.373849 [debug] [Thread-1 (]: Writing injected SQL for node "test.spotify_dbt.source_relationships_spotify_oltp_track_artists_track_id__track_id__source_spotify_oltp_tracks_.4d354d4fcc"
+[0m20:47:37.374849 [debug] [Thread-1 (]: Began executing node test.spotify_dbt.source_relationships_spotify_oltp_track_artists_track_id__track_id__source_spotify_oltp_tracks_.4d354d4fcc
+[0m20:47:37.377849 [debug] [Thread-1 (]: Writing runtime sql for node "test.spotify_dbt.source_relationships_spotify_oltp_track_artists_track_id__track_id__source_spotify_oltp_tracks_.4d354d4fcc"
+[0m20:47:37.377849 [debug] [Thread-2 (]: On test.spotify_dbt.source_not_null_spotify_oltp_tracks_track_name.f9a9543172: Close
+[0m20:47:37.377849 [info ] [Thread-2 (]: 38 of 56 PASS source_not_null_spotify_oltp_tracks_track_name ................... [[32mPASS[0m in 0.21s]
+[0m20:47:37.377849 [debug] [Thread-1 (]: Using postgres connection "test.spotify_dbt.source_relationships_spotify_oltp_track_artists_track_id__track_id__source_spotify_oltp_tracks_.4d354d4fcc"
+[0m20:47:37.380555 [debug] [Thread-2 (]: Finished running node test.spotify_dbt.source_not_null_spotify_oltp_tracks_track_name.f9a9543172
+[0m20:47:37.380555 [debug] [Thread-1 (]: On test.spotify_dbt.source_relationships_spotify_oltp_track_artists_track_id__track_id__source_spotify_oltp_tracks_.4d354d4fcc: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.source_relationships_spotify_oltp_track_artists_track_id__track_id__source_spotify_oltp_tracks_.4d354d4fcc"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select track_id as from_field
+    from "neondb"."public"."track_artists"
+    where track_id is not null
+),
+
+parent as (
+    select track_id as to_field
+    from "neondb"."public"."tracks"
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:37.380555 [debug] [Thread-2 (]: Began running node test.spotify_dbt.source_relationships_spotify_oltp_tracks_album_id__album_id__source_spotify_oltp_albums_.abb71165d6
+[0m20:47:37.380555 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:47:37.380555 [info ] [Thread-2 (]: 42 of 56 START test source_relationships_spotify_oltp_tracks_album_id__album_id__source_spotify_oltp_albums_  [RUN]
+[0m20:47:37.380555 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.source_not_null_spotify_oltp_tracks_track_name.f9a9543172, now test.spotify_dbt.source_relationships_spotify_oltp_tracks_album_id__album_id__source_spotify_oltp_albums_.abb71165d6)
+[0m20:47:37.380555 [debug] [Thread-2 (]: Began compiling node test.spotify_dbt.source_relationships_spotify_oltp_tracks_album_id__album_id__source_spotify_oltp_albums_.abb71165d6
+[0m20:47:37.388125 [debug] [Thread-2 (]: Writing injected SQL for node "test.spotify_dbt.source_relationships_spotify_oltp_tracks_album_id__album_id__source_spotify_oltp_albums_.abb71165d6"
+[0m20:47:37.391485 [debug] [Thread-2 (]: Began executing node test.spotify_dbt.source_relationships_spotify_oltp_tracks_album_id__album_id__source_spotify_oltp_albums_.abb71165d6
+[0m20:47:37.394684 [debug] [Thread-2 (]: Writing runtime sql for node "test.spotify_dbt.source_relationships_spotify_oltp_tracks_album_id__album_id__source_spotify_oltp_albums_.abb71165d6"
+[0m20:47:37.394684 [debug] [Thread-2 (]: Using postgres connection "test.spotify_dbt.source_relationships_spotify_oltp_tracks_album_id__album_id__source_spotify_oltp_albums_.abb71165d6"
+[0m20:47:37.394684 [debug] [Thread-2 (]: On test.spotify_dbt.source_relationships_spotify_oltp_tracks_album_id__album_id__source_spotify_oltp_albums_.abb71165d6: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.source_relationships_spotify_oltp_tracks_album_id__album_id__source_spotify_oltp_albums_.abb71165d6"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select album_id as from_field
+    from "neondb"."public"."tracks"
+    where album_id is not null
+),
+
+parent as (
+    select album_id as to_field
+    from "neondb"."public"."albums"
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:37.394684 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m20:47:37.420934 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.225 seconds
+[0m20:47:37.420934 [debug] [Thread-3 (]: On test.spotify_dbt.source_relationships_spotify_oltp_audio_features_track_id__track_id__source_spotify_oltp_tracks_.4b5b93d571: ROLLBACK
+[0m20:47:37.453035 [debug] [Thread-3 (]: On test.spotify_dbt.source_relationships_spotify_oltp_audio_features_track_id__track_id__source_spotify_oltp_tracks_.4b5b93d571: Close
+[0m20:47:37.453035 [info ] [Thread-3 (]: 39 of 56 PASS source_relationships_spotify_oltp_audio_features_track_id__track_id__source_spotify_oltp_tracks_  [[32mPASS[0m in 0.26s]
+[0m20:47:37.453035 [debug] [Thread-3 (]: Finished running node test.spotify_dbt.source_relationships_spotify_oltp_audio_features_track_id__track_id__source_spotify_oltp_tracks_.4b5b93d571
+[0m20:47:37.453035 [debug] [Thread-3 (]: Began running node test.spotify_dbt.source_relationships_spotify_oltp_tracks_genre_id__genre_id__source_spotify_oltp_genres_.aaba59b630
+[0m20:47:37.453035 [info ] [Thread-3 (]: 43 of 56 START test source_relationships_spotify_oltp_tracks_genre_id__genre_id__source_spotify_oltp_genres_  [RUN]
+[0m20:47:37.453035 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.source_relationships_spotify_oltp_audio_features_track_id__track_id__source_spotify_oltp_tracks_.4b5b93d571, now test.spotify_dbt.source_relationships_spotify_oltp_tracks_genre_id__genre_id__source_spotify_oltp_genres_.aaba59b630)
+[0m20:47:37.453035 [debug] [Thread-3 (]: Began compiling node test.spotify_dbt.source_relationships_spotify_oltp_tracks_genre_id__genre_id__source_spotify_oltp_genres_.aaba59b630
+[0m20:47:37.453035 [debug] [Thread-3 (]: Writing injected SQL for node "test.spotify_dbt.source_relationships_spotify_oltp_tracks_genre_id__genre_id__source_spotify_oltp_genres_.aaba59b630"
+[0m20:47:37.468851 [debug] [Thread-3 (]: Began executing node test.spotify_dbt.source_relationships_spotify_oltp_tracks_genre_id__genre_id__source_spotify_oltp_genres_.aaba59b630
+[0m20:47:37.471138 [debug] [Thread-3 (]: Writing runtime sql for node "test.spotify_dbt.source_relationships_spotify_oltp_tracks_genre_id__genre_id__source_spotify_oltp_genres_.aaba59b630"
+[0m20:47:37.472184 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.218 seconds
+[0m20:47:37.472184 [debug] [Thread-3 (]: Using postgres connection "test.spotify_dbt.source_relationships_spotify_oltp_tracks_genre_id__genre_id__source_spotify_oltp_genres_.aaba59b630"
+[0m20:47:37.474205 [debug] [Thread-4 (]: On test.spotify_dbt.source_relationships_spotify_oltp_track_artists_artist_id__artist_id__source_spotify_oltp_artists_.959d149100: ROLLBACK
+[0m20:47:37.474205 [debug] [Thread-3 (]: On test.spotify_dbt.source_relationships_spotify_oltp_tracks_genre_id__genre_id__source_spotify_oltp_genres_.aaba59b630: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.source_relationships_spotify_oltp_tracks_genre_id__genre_id__source_spotify_oltp_genres_.aaba59b630"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select genre_id as from_field
+    from "neondb"."public"."tracks"
+    where genre_id is not null
+),
+
+parent as (
+    select genre_id as to_field
+    from "neondb"."public"."genres"
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:37.475186 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m20:47:37.492147 [debug] [Thread-4 (]: On test.spotify_dbt.source_relationships_spotify_oltp_track_artists_artist_id__artist_id__source_spotify_oltp_artists_.959d149100: Close
+[0m20:47:37.493144 [info ] [Thread-4 (]: 40 of 56 PASS source_relationships_spotify_oltp_track_artists_artist_id__artist_id__source_spotify_oltp_artists_  [[32mPASS[0m in 0.26s]
+[0m20:47:37.493144 [debug] [Thread-4 (]: Finished running node test.spotify_dbt.source_relationships_spotify_oltp_track_artists_artist_id__artist_id__source_spotify_oltp_artists_.959d149100
+[0m20:47:37.494190 [debug] [Thread-4 (]: Began running node test.spotify_dbt.source_unique_spotify_oltp_albums_album_id.bf560cbd03
+[0m20:47:37.494190 [info ] [Thread-4 (]: 44 of 56 START test source_unique_spotify_oltp_albums_album_id ................. [RUN]
+[0m20:47:37.495142 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.source_relationships_spotify_oltp_track_artists_artist_id__artist_id__source_spotify_oltp_artists_.959d149100, now test.spotify_dbt.source_unique_spotify_oltp_albums_album_id.bf560cbd03)
+[0m20:47:37.496144 [debug] [Thread-4 (]: Began compiling node test.spotify_dbt.source_unique_spotify_oltp_albums_album_id.bf560cbd03
+[0m20:47:37.501228 [debug] [Thread-4 (]: Writing injected SQL for node "test.spotify_dbt.source_unique_spotify_oltp_albums_album_id.bf560cbd03"
+[0m20:47:37.503906 [debug] [Thread-4 (]: Began executing node test.spotify_dbt.source_unique_spotify_oltp_albums_album_id.bf560cbd03
+[0m20:47:37.504942 [debug] [Thread-4 (]: Writing runtime sql for node "test.spotify_dbt.source_unique_spotify_oltp_albums_album_id.bf560cbd03"
+[0m20:47:37.504942 [debug] [Thread-4 (]: Using postgres connection "test.spotify_dbt.source_unique_spotify_oltp_albums_album_id.bf560cbd03"
+[0m20:47:37.508644 [debug] [Thread-4 (]: On test.spotify_dbt.source_unique_spotify_oltp_albums_album_id.bf560cbd03: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.source_unique_spotify_oltp_albums_album_id.bf560cbd03"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    album_id as unique_field,
+    count(*) as n_records
+
+from "neondb"."public"."albums"
+where album_id is not null
+group by album_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:37.508644 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m20:47:37.658666 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.277 seconds
+[0m20:47:37.658666 [debug] [Thread-1 (]: On test.spotify_dbt.source_relationships_spotify_oltp_track_artists_track_id__track_id__source_spotify_oltp_tracks_.4d354d4fcc: ROLLBACK
+[0m20:47:37.674646 [debug] [Thread-1 (]: On test.spotify_dbt.source_relationships_spotify_oltp_track_artists_track_id__track_id__source_spotify_oltp_tracks_.4d354d4fcc: Close
+[0m20:47:37.674646 [info ] [Thread-1 (]: 41 of 56 PASS source_relationships_spotify_oltp_track_artists_track_id__track_id__source_spotify_oltp_tracks_  [[32mPASS[0m in 0.31s]
+[0m20:47:37.674646 [debug] [Thread-1 (]: Finished running node test.spotify_dbt.source_relationships_spotify_oltp_track_artists_track_id__track_id__source_spotify_oltp_tracks_.4d354d4fcc
+[0m20:47:37.674646 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.207 seconds
+[0m20:47:37.674646 [debug] [Thread-1 (]: Began running node test.spotify_dbt.source_unique_spotify_oltp_artists_artist_id.f08a96e34b
+[0m20:47:37.674646 [debug] [Thread-3 (]: On test.spotify_dbt.source_relationships_spotify_oltp_tracks_genre_id__genre_id__source_spotify_oltp_genres_.aaba59b630: ROLLBACK
+[0m20:47:37.674646 [info ] [Thread-1 (]: 45 of 56 START test source_unique_spotify_oltp_artists_artist_id ............... [RUN]
+[0m20:47:37.674646 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.source_relationships_spotify_oltp_track_artists_track_id__track_id__source_spotify_oltp_tracks_.4d354d4fcc, now test.spotify_dbt.source_unique_spotify_oltp_artists_artist_id.f08a96e34b)
+[0m20:47:37.674646 [debug] [Thread-1 (]: Began compiling node test.spotify_dbt.source_unique_spotify_oltp_artists_artist_id.f08a96e34b
+[0m20:47:37.674646 [debug] [Thread-1 (]: Writing injected SQL for node "test.spotify_dbt.source_unique_spotify_oltp_artists_artist_id.f08a96e34b"
+[0m20:47:37.690557 [debug] [Thread-1 (]: Began executing node test.spotify_dbt.source_unique_spotify_oltp_artists_artist_id.f08a96e34b
+[0m20:47:37.692637 [debug] [Thread-1 (]: Writing runtime sql for node "test.spotify_dbt.source_unique_spotify_oltp_artists_artist_id.f08a96e34b"
+[0m20:47:37.695491 [debug] [Thread-1 (]: Using postgres connection "test.spotify_dbt.source_unique_spotify_oltp_artists_artist_id.f08a96e34b"
+[0m20:47:37.695491 [debug] [Thread-1 (]: On test.spotify_dbt.source_unique_spotify_oltp_artists_artist_id.f08a96e34b: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.source_unique_spotify_oltp_artists_artist_id.f08a96e34b"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    artist_id as unique_field,
+    count(*) as n_records
+
+from "neondb"."public"."artists"
+where artist_id is not null
+group by artist_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:37.696625 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:47:37.702801 [debug] [Thread-3 (]: On test.spotify_dbt.source_relationships_spotify_oltp_tracks_genre_id__genre_id__source_spotify_oltp_genres_.aaba59b630: Close
+[0m20:47:37.702801 [info ] [Thread-3 (]: 43 of 56 PASS source_relationships_spotify_oltp_tracks_genre_id__genre_id__source_spotify_oltp_genres_  [[32mPASS[0m in 0.25s]
+[0m20:47:37.702801 [debug] [Thread-3 (]: Finished running node test.spotify_dbt.source_relationships_spotify_oltp_tracks_genre_id__genre_id__source_spotify_oltp_genres_.aaba59b630
+[0m20:47:37.704806 [debug] [Thread-3 (]: Began running node test.spotify_dbt.source_unique_spotify_oltp_artists_artist_name.e5780ddc59
+[0m20:47:37.704806 [info ] [Thread-3 (]: 46 of 56 START test source_unique_spotify_oltp_artists_artist_name ............. [RUN]
+[0m20:47:37.705848 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.source_relationships_spotify_oltp_tracks_genre_id__genre_id__source_spotify_oltp_genres_.aaba59b630, now test.spotify_dbt.source_unique_spotify_oltp_artists_artist_name.e5780ddc59)
+[0m20:47:37.705848 [debug] [Thread-3 (]: Began compiling node test.spotify_dbt.source_unique_spotify_oltp_artists_artist_name.e5780ddc59
+[0m20:47:37.705848 [debug] [Thread-3 (]: Writing injected SQL for node "test.spotify_dbt.source_unique_spotify_oltp_artists_artist_name.e5780ddc59"
+[0m20:47:37.705848 [debug] [Thread-3 (]: Began executing node test.spotify_dbt.source_unique_spotify_oltp_artists_artist_name.e5780ddc59
+[0m20:47:37.713534 [debug] [Thread-3 (]: Writing runtime sql for node "test.spotify_dbt.source_unique_spotify_oltp_artists_artist_name.e5780ddc59"
+[0m20:47:37.714806 [debug] [Thread-3 (]: Using postgres connection "test.spotify_dbt.source_unique_spotify_oltp_artists_artist_name.e5780ddc59"
+[0m20:47:37.715806 [debug] [Thread-3 (]: On test.spotify_dbt.source_unique_spotify_oltp_artists_artist_name.e5780ddc59: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.source_unique_spotify_oltp_artists_artist_name.e5780ddc59"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    artist_name as unique_field,
+    count(*) as n_records
+
+from "neondb"."public"."artists"
+where artist_name is not null
+group by artist_name
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:37.715806 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m20:47:37.922518 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.414 seconds
+[0m20:47:37.925088 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.209 seconds
+[0m20:47:37.925088 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.230 seconds
+[0m20:47:37.925088 [debug] [Thread-4 (]: On test.spotify_dbt.source_unique_spotify_oltp_albums_album_id.bf560cbd03: ROLLBACK
+[0m20:47:37.925088 [debug] [Thread-3 (]: On test.spotify_dbt.source_unique_spotify_oltp_artists_artist_name.e5780ddc59: ROLLBACK
+[0m20:47:37.935027 [debug] [Thread-1 (]: On test.spotify_dbt.source_unique_spotify_oltp_artists_artist_id.f08a96e34b: ROLLBACK
+[0m20:47:37.954482 [debug] [Thread-1 (]: On test.spotify_dbt.source_unique_spotify_oltp_artists_artist_id.f08a96e34b: Close
+[0m20:47:37.954482 [debug] [Thread-4 (]: On test.spotify_dbt.source_unique_spotify_oltp_albums_album_id.bf560cbd03: Close
+[0m20:47:37.954482 [debug] [Thread-3 (]: On test.spotify_dbt.source_unique_spotify_oltp_artists_artist_name.e5780ddc59: Close
+[0m20:47:37.954482 [info ] [Thread-1 (]: 45 of 56 PASS source_unique_spotify_oltp_artists_artist_id ..................... [[32mPASS[0m in 0.28s]
+[0m20:47:37.954482 [info ] [Thread-4 (]: 44 of 56 PASS source_unique_spotify_oltp_albums_album_id ....................... [[32mPASS[0m in 0.46s]
+[0m20:47:37.954482 [debug] [Thread-1 (]: Finished running node test.spotify_dbt.source_unique_spotify_oltp_artists_artist_id.f08a96e34b
+[0m20:47:37.954482 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.569 seconds
+[0m20:47:37.954482 [info ] [Thread-3 (]: 46 of 56 PASS source_unique_spotify_oltp_artists_artist_name ................... [[32mPASS[0m in 0.25s]
+[0m20:47:37.966517 [debug] [Thread-4 (]: Finished running node test.spotify_dbt.source_unique_spotify_oltp_albums_album_id.bf560cbd03
+[0m20:47:37.966517 [debug] [Thread-1 (]: Began running node test.spotify_dbt.source_unique_spotify_oltp_audio_features_track_id.105b292840
+[0m20:47:37.966517 [debug] [Thread-2 (]: On test.spotify_dbt.source_relationships_spotify_oltp_tracks_album_id__album_id__source_spotify_oltp_albums_.abb71165d6: ROLLBACK
+[0m20:47:37.970489 [debug] [Thread-3 (]: Finished running node test.spotify_dbt.source_unique_spotify_oltp_artists_artist_name.e5780ddc59
+[0m20:47:37.971469 [debug] [Thread-4 (]: Began running node test.spotify_dbt.source_unique_spotify_oltp_genres_genre_id.8e0bdf509a
+[0m20:47:37.971469 [info ] [Thread-1 (]: 47 of 56 START test source_unique_spotify_oltp_audio_features_track_id ......... [RUN]
+[0m20:47:37.973154 [debug] [Thread-3 (]: Began running node test.spotify_dbt.source_unique_spotify_oltp_genres_genre_name.27e291e447
+[0m20:47:37.974184 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.source_unique_spotify_oltp_artists_artist_id.f08a96e34b, now test.spotify_dbt.source_unique_spotify_oltp_audio_features_track_id.105b292840)
+[0m20:47:37.973154 [info ] [Thread-4 (]: 48 of 56 START test source_unique_spotify_oltp_genres_genre_id ................. [RUN]
+[0m20:47:37.974184 [info ] [Thread-3 (]: 49 of 56 START test source_unique_spotify_oltp_genres_genre_name ............... [RUN]
+[0m20:47:37.975184 [debug] [Thread-1 (]: Began compiling node test.spotify_dbt.source_unique_spotify_oltp_audio_features_track_id.105b292840
+[0m20:47:37.976184 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.source_unique_spotify_oltp_albums_album_id.bf560cbd03, now test.spotify_dbt.source_unique_spotify_oltp_genres_genre_id.8e0bdf509a)
+[0m20:47:37.976184 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.source_unique_spotify_oltp_artists_artist_name.e5780ddc59, now test.spotify_dbt.source_unique_spotify_oltp_genres_genre_name.27e291e447)
+[0m20:47:37.977184 [debug] [Thread-1 (]: Writing injected SQL for node "test.spotify_dbt.source_unique_spotify_oltp_audio_features_track_id.105b292840"
+[0m20:47:37.977184 [debug] [Thread-4 (]: Began compiling node test.spotify_dbt.source_unique_spotify_oltp_genres_genre_id.8e0bdf509a
+[0m20:47:37.977184 [debug] [Thread-3 (]: Began compiling node test.spotify_dbt.source_unique_spotify_oltp_genres_genre_name.27e291e447
+[0m20:47:37.984534 [debug] [Thread-4 (]: Writing injected SQL for node "test.spotify_dbt.source_unique_spotify_oltp_genres_genre_id.8e0bdf509a"
+[0m20:47:37.989180 [debug] [Thread-3 (]: Writing injected SQL for node "test.spotify_dbt.source_unique_spotify_oltp_genres_genre_name.27e291e447"
+[0m20:47:37.989180 [debug] [Thread-1 (]: Began executing node test.spotify_dbt.source_unique_spotify_oltp_audio_features_track_id.105b292840
+[0m20:47:37.990073 [debug] [Thread-4 (]: Began executing node test.spotify_dbt.source_unique_spotify_oltp_genres_genre_id.8e0bdf509a
+[0m20:47:37.992376 [debug] [Thread-1 (]: Writing runtime sql for node "test.spotify_dbt.source_unique_spotify_oltp_audio_features_track_id.105b292840"
+[0m20:47:37.992376 [debug] [Thread-3 (]: Began executing node test.spotify_dbt.source_unique_spotify_oltp_genres_genre_name.27e291e447
+[0m20:47:37.992376 [debug] [Thread-2 (]: On test.spotify_dbt.source_relationships_spotify_oltp_tracks_album_id__album_id__source_spotify_oltp_albums_.abb71165d6: Close
+[0m20:47:37.996005 [debug] [Thread-4 (]: Writing runtime sql for node "test.spotify_dbt.source_unique_spotify_oltp_genres_genre_id.8e0bdf509a"
+[0m20:47:37.998654 [debug] [Thread-3 (]: Writing runtime sql for node "test.spotify_dbt.source_unique_spotify_oltp_genres_genre_name.27e291e447"
+[0m20:47:37.999341 [debug] [Thread-1 (]: Using postgres connection "test.spotify_dbt.source_unique_spotify_oltp_audio_features_track_id.105b292840"
+[0m20:47:37.999341 [info ] [Thread-2 (]: 42 of 56 PASS source_relationships_spotify_oltp_tracks_album_id__album_id__source_spotify_oltp_albums_  [[32mPASS[0m in 0.62s]
+[0m20:47:37.999341 [debug] [Thread-4 (]: Using postgres connection "test.spotify_dbt.source_unique_spotify_oltp_genres_genre_id.8e0bdf509a"
+[0m20:47:37.999341 [debug] [Thread-1 (]: On test.spotify_dbt.source_unique_spotify_oltp_audio_features_track_id.105b292840: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.source_unique_spotify_oltp_audio_features_track_id.105b292840"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    track_id as unique_field,
+    count(*) as n_records
+
+from "neondb"."public"."audio_features"
+where track_id is not null
+group by track_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:37.999341 [debug] [Thread-2 (]: Finished running node test.spotify_dbt.source_relationships_spotify_oltp_tracks_album_id__album_id__source_spotify_oltp_albums_.abb71165d6
+[0m20:47:37.999341 [debug] [Thread-3 (]: Using postgres connection "test.spotify_dbt.source_unique_spotify_oltp_genres_genre_name.27e291e447"
+[0m20:47:37.999341 [debug] [Thread-4 (]: On test.spotify_dbt.source_unique_spotify_oltp_genres_genre_id.8e0bdf509a: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.source_unique_spotify_oltp_genres_genre_id.8e0bdf509a"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    genre_id as unique_field,
+    count(*) as n_records
+
+from "neondb"."public"."genres"
+where genre_id is not null
+group by genre_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:37.999341 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:47:38.003940 [debug] [Thread-2 (]: Began running node test.spotify_dbt.source_unique_spotify_oltp_tracks_track_id.704c14db47
+[0m20:47:38.003940 [debug] [Thread-3 (]: On test.spotify_dbt.source_unique_spotify_oltp_genres_genre_name.27e291e447: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.source_unique_spotify_oltp_genres_genre_name.27e291e447"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    genre_name as unique_field,
+    count(*) as n_records
+
+from "neondb"."public"."genres"
+where genre_name is not null
+group by genre_name
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:38.003940 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m20:47:38.005320 [info ] [Thread-2 (]: 50 of 56 START test source_unique_spotify_oltp_tracks_track_id ................. [RUN]
+[0m20:47:38.006473 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m20:47:38.007375 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.source_relationships_spotify_oltp_tracks_album_id__album_id__source_spotify_oltp_albums_.abb71165d6, now test.spotify_dbt.source_unique_spotify_oltp_tracks_track_id.704c14db47)
+[0m20:47:38.008377 [debug] [Thread-2 (]: Began compiling node test.spotify_dbt.source_unique_spotify_oltp_tracks_track_id.704c14db47
+[0m20:47:38.012443 [debug] [Thread-2 (]: Writing injected SQL for node "test.spotify_dbt.source_unique_spotify_oltp_tracks_track_id.704c14db47"
+[0m20:47:38.013061 [debug] [Thread-2 (]: Began executing node test.spotify_dbt.source_unique_spotify_oltp_tracks_track_id.704c14db47
+[0m20:47:38.016575 [debug] [Thread-2 (]: Writing runtime sql for node "test.spotify_dbt.source_unique_spotify_oltp_tracks_track_id.704c14db47"
+[0m20:47:38.017607 [debug] [Thread-2 (]: Using postgres connection "test.spotify_dbt.source_unique_spotify_oltp_tracks_track_id.704c14db47"
+[0m20:47:38.018471 [debug] [Thread-2 (]: On test.spotify_dbt.source_unique_spotify_oltp_tracks_track_id.704c14db47: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.source_unique_spotify_oltp_tracks_track_id.704c14db47"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    track_id as unique_field,
+    count(*) as n_records
+
+from "neondb"."public"."tracks"
+where track_id is not null
+group by track_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:38.018471 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m20:47:38.175482 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.178 seconds
+[0m20:47:38.184874 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.179 seconds
+[0m20:47:38.184874 [debug] [Thread-4 (]: On test.spotify_dbt.source_unique_spotify_oltp_genres_genre_id.8e0bdf509a: ROLLBACK
+[0m20:47:38.191561 [debug] [Thread-3 (]: On test.spotify_dbt.source_unique_spotify_oltp_genres_genre_name.27e291e447: ROLLBACK
+[0m20:47:38.207648 [debug] [Thread-4 (]: On test.spotify_dbt.source_unique_spotify_oltp_genres_genre_id.8e0bdf509a: Close
+[0m20:47:38.213909 [debug] [Thread-3 (]: On test.spotify_dbt.source_unique_spotify_oltp_genres_genre_name.27e291e447: Close
+[0m20:47:38.217114 [info ] [Thread-4 (]: 48 of 56 PASS source_unique_spotify_oltp_genres_genre_id ....................... [[32mPASS[0m in 0.24s]
+[0m20:47:38.217114 [info ] [Thread-3 (]: 49 of 56 PASS source_unique_spotify_oltp_genres_genre_name ..................... [[32mPASS[0m in 0.24s]
+[0m20:47:38.220636 [debug] [Thread-4 (]: Finished running node test.spotify_dbt.source_unique_spotify_oltp_genres_genre_id.8e0bdf509a
+[0m20:47:38.222648 [debug] [Thread-3 (]: Finished running node test.spotify_dbt.source_unique_spotify_oltp_genres_genre_name.27e291e447
+[0m20:47:38.223656 [debug] [Thread-4 (]: Began running node test.spotify_dbt.unique_dim_album_album_id.57cfaa8aff
+[0m20:47:38.223656 [debug] [Thread-3 (]: Began running node test.spotify_dbt.unique_dim_artist_artist_id.c72fc4aad4
+[0m20:47:38.223656 [info ] [Thread-4 (]: 51 of 56 START test unique_dim_album_album_id .................................. [RUN]
+[0m20:47:38.223656 [info ] [Thread-3 (]: 52 of 56 START test unique_dim_artist_artist_id ................................ [RUN]
+[0m20:47:38.223656 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.source_unique_spotify_oltp_genres_genre_id.8e0bdf509a, now test.spotify_dbt.unique_dim_album_album_id.57cfaa8aff)
+[0m20:47:38.227450 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.source_unique_spotify_oltp_genres_genre_name.27e291e447, now test.spotify_dbt.unique_dim_artist_artist_id.c72fc4aad4)
+[0m20:47:38.227936 [debug] [Thread-4 (]: Began compiling node test.spotify_dbt.unique_dim_album_album_id.57cfaa8aff
+[0m20:47:38.228554 [debug] [Thread-3 (]: Began compiling node test.spotify_dbt.unique_dim_artist_artist_id.c72fc4aad4
+[0m20:47:38.231557 [debug] [Thread-4 (]: Writing injected SQL for node "test.spotify_dbt.unique_dim_album_album_id.57cfaa8aff"
+[0m20:47:38.232557 [debug] [Thread-3 (]: Writing injected SQL for node "test.spotify_dbt.unique_dim_artist_artist_id.c72fc4aad4"
+[0m20:47:38.232557 [debug] [Thread-3 (]: Began executing node test.spotify_dbt.unique_dim_artist_artist_id.c72fc4aad4
+[0m20:47:38.232557 [debug] [Thread-4 (]: Began executing node test.spotify_dbt.unique_dim_album_album_id.57cfaa8aff
+[0m20:47:38.232557 [debug] [Thread-3 (]: Writing runtime sql for node "test.spotify_dbt.unique_dim_artist_artist_id.c72fc4aad4"
+[0m20:47:38.232557 [debug] [Thread-4 (]: Writing runtime sql for node "test.spotify_dbt.unique_dim_album_album_id.57cfaa8aff"
+[0m20:47:38.232557 [debug] [Thread-3 (]: Using postgres connection "test.spotify_dbt.unique_dim_artist_artist_id.c72fc4aad4"
+[0m20:47:38.232557 [debug] [Thread-4 (]: Using postgres connection "test.spotify_dbt.unique_dim_album_album_id.57cfaa8aff"
+[0m20:47:38.232557 [debug] [Thread-3 (]: On test.spotify_dbt.unique_dim_artist_artist_id.c72fc4aad4: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.unique_dim_artist_artist_id.c72fc4aad4"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    artist_id as unique_field,
+    count(*) as n_records
+
+from "neondb"."public_marts"."dim_artist"
+where artist_id is not null
+group by artist_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:38.232557 [debug] [Thread-4 (]: On test.spotify_dbt.unique_dim_album_album_id.57cfaa8aff: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.unique_dim_album_album_id.57cfaa8aff"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    album_id as unique_field,
+    count(*) as n_records
+
+from "neondb"."public_marts"."dim_album"
+where album_id is not null
+group by album_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:38.232557 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m20:47:38.232557 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m20:47:38.381919 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.369 seconds
+[0m20:47:38.391617 [debug] [Thread-2 (]: On test.spotify_dbt.source_unique_spotify_oltp_tracks_track_id.704c14db47: ROLLBACK
+[0m20:47:38.393634 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.390 seconds
+[0m20:47:38.394648 [debug] [Thread-1 (]: On test.spotify_dbt.source_unique_spotify_oltp_audio_features_track_id.105b292840: ROLLBACK
+[0m20:47:38.410641 [debug] [Thread-2 (]: On test.spotify_dbt.source_unique_spotify_oltp_tracks_track_id.704c14db47: Close
+[0m20:47:38.412907 [info ] [Thread-2 (]: 50 of 56 PASS source_unique_spotify_oltp_tracks_track_id ....................... [[32mPASS[0m in 0.41s]
+[0m20:47:38.414918 [debug] [Thread-2 (]: Finished running node test.spotify_dbt.source_unique_spotify_oltp_tracks_track_id.704c14db47
+[0m20:47:38.414918 [debug] [Thread-2 (]: Began running node test.spotify_dbt.unique_dim_artist_artist_name.e514e8ae86
+[0m20:47:38.414918 [info ] [Thread-2 (]: 53 of 56 START test unique_dim_artist_artist_name .............................. [RUN]
+[0m20:47:38.414918 [debug] [Thread-1 (]: On test.spotify_dbt.source_unique_spotify_oltp_audio_features_track_id.105b292840: Close
+[0m20:47:38.414918 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.source_unique_spotify_oltp_tracks_track_id.704c14db47, now test.spotify_dbt.unique_dim_artist_artist_name.e514e8ae86)
+[0m20:47:38.418656 [debug] [Thread-2 (]: Began compiling node test.spotify_dbt.unique_dim_artist_artist_name.e514e8ae86
+[0m20:47:38.418656 [info ] [Thread-1 (]: 47 of 56 PASS source_unique_spotify_oltp_audio_features_track_id ............... [[32mPASS[0m in 0.44s]
+[0m20:47:38.422774 [debug] [Thread-2 (]: Writing injected SQL for node "test.spotify_dbt.unique_dim_artist_artist_name.e514e8ae86"
+[0m20:47:38.422774 [debug] [Thread-1 (]: Finished running node test.spotify_dbt.source_unique_spotify_oltp_audio_features_track_id.105b292840
+[0m20:47:38.423772 [debug] [Thread-2 (]: Began executing node test.spotify_dbt.unique_dim_artist_artist_name.e514e8ae86
+[0m20:47:38.424783 [debug] [Thread-1 (]: Began running node test.spotify_dbt.unique_dim_genre_genre_id.757304f7bc
+[0m20:47:38.477461 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.235 seconds
+[0m20:47:38.477461 [debug] [Thread-2 (]: Writing runtime sql for node "test.spotify_dbt.unique_dim_artist_artist_name.e514e8ae86"
+[0m20:47:38.481925 [debug] [Thread-3 (]: On test.spotify_dbt.unique_dim_artist_artist_id.c72fc4aad4: ROLLBACK
+[0m20:47:38.477461 [info ] [Thread-1 (]: 54 of 56 START test unique_dim_genre_genre_id .................................. [RUN]
+[0m20:47:38.481925 [debug] [Thread-2 (]: Using postgres connection "test.spotify_dbt.unique_dim_artist_artist_name.e514e8ae86"
+[0m20:47:38.481925 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.source_unique_spotify_oltp_audio_features_track_id.105b292840, now test.spotify_dbt.unique_dim_genre_genre_id.757304f7bc)
+[0m20:47:38.481925 [debug] [Thread-2 (]: On test.spotify_dbt.unique_dim_artist_artist_name.e514e8ae86: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.unique_dim_artist_artist_name.e514e8ae86"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    artist_name as unique_field,
+    count(*) as n_records
+
+from "neondb"."public_marts"."dim_artist"
+where artist_name is not null
+group by artist_name
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:38.481925 [debug] [Thread-1 (]: Began compiling node test.spotify_dbt.unique_dim_genre_genre_id.757304f7bc
+[0m20:47:38.481925 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m20:47:38.481925 [debug] [Thread-1 (]: Writing injected SQL for node "test.spotify_dbt.unique_dim_genre_genre_id.757304f7bc"
+[0m20:47:38.481925 [debug] [Thread-1 (]: Began executing node test.spotify_dbt.unique_dim_genre_genre_id.757304f7bc
+[0m20:47:38.491426 [debug] [Thread-1 (]: Writing runtime sql for node "test.spotify_dbt.unique_dim_genre_genre_id.757304f7bc"
+[0m20:47:38.494840 [debug] [Thread-1 (]: Using postgres connection "test.spotify_dbt.unique_dim_genre_genre_id.757304f7bc"
+[0m20:47:38.495335 [debug] [Thread-1 (]: On test.spotify_dbt.unique_dim_genre_genre_id.757304f7bc: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.unique_dim_genre_genre_id.757304f7bc"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    genre_id as unique_field,
+    count(*) as n_records
+
+from "neondb"."public_marts"."dim_genre"
+where genre_id is not null
+group by genre_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:38.496740 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:47:38.503043 [debug] [Thread-3 (]: On test.spotify_dbt.unique_dim_artist_artist_id.c72fc4aad4: Close
+[0m20:47:38.504113 [info ] [Thread-3 (]: 52 of 56 PASS unique_dim_artist_artist_id ...................................... [[32mPASS[0m in 0.28s]
+[0m20:47:38.504113 [debug] [Thread-3 (]: Finished running node test.spotify_dbt.unique_dim_artist_artist_id.c72fc4aad4
+[0m20:47:38.504113 [debug] [Thread-3 (]: Began running node test.spotify_dbt.unique_dim_genre_genre_name.9be7947bba
+[0m20:47:38.505618 [info ] [Thread-3 (]: 55 of 56 START test unique_dim_genre_genre_name ................................ [RUN]
+[0m20:47:38.506625 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.unique_dim_artist_artist_id.c72fc4aad4, now test.spotify_dbt.unique_dim_genre_genre_name.9be7947bba)
+[0m20:47:38.506625 [debug] [Thread-3 (]: Began compiling node test.spotify_dbt.unique_dim_genre_genre_name.9be7947bba
+[0m20:47:38.510625 [debug] [Thread-3 (]: Writing injected SQL for node "test.spotify_dbt.unique_dim_genre_genre_name.9be7947bba"
+[0m20:47:38.510625 [debug] [Thread-3 (]: Began executing node test.spotify_dbt.unique_dim_genre_genre_name.9be7947bba
+[0m20:47:38.512985 [debug] [Thread-3 (]: Writing runtime sql for node "test.spotify_dbt.unique_dim_genre_genre_name.9be7947bba"
+[0m20:47:38.513987 [debug] [Thread-3 (]: Using postgres connection "test.spotify_dbt.unique_dim_genre_genre_name.9be7947bba"
+[0m20:47:38.514935 [debug] [Thread-3 (]: On test.spotify_dbt.unique_dim_genre_genre_name.9be7947bba: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.unique_dim_genre_genre_name.9be7947bba"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    genre_name as unique_field,
+    count(*) as n_records
+
+from "neondb"."public_marts"."dim_genre"
+where genre_name is not null
+group by genre_name
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:38.514935 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m20:47:38.553180 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.308 seconds
+[0m20:47:38.555173 [debug] [Thread-4 (]: On test.spotify_dbt.unique_dim_album_album_id.57cfaa8aff: ROLLBACK
+[0m20:47:38.559549 [debug] [Thread-4 (]: On test.spotify_dbt.unique_dim_album_album_id.57cfaa8aff: Close
+[0m20:47:38.575049 [info ] [Thread-4 (]: 51 of 56 PASS unique_dim_album_album_id ........................................ [[32mPASS[0m in 0.35s]
+[0m20:47:38.577061 [debug] [Thread-4 (]: Finished running node test.spotify_dbt.unique_dim_album_album_id.57cfaa8aff
+[0m20:47:38.577061 [debug] [Thread-4 (]: Began running node test.spotify_dbt.unique_fact_tracks_track_id.dac5d4079c
+[0m20:47:38.577061 [info ] [Thread-4 (]: 56 of 56 START test unique_fact_tracks_track_id ................................ [RUN]
+[0m20:47:38.577061 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.spotify_dbt.unique_dim_album_album_id.57cfaa8aff, now test.spotify_dbt.unique_fact_tracks_track_id.dac5d4079c)
+[0m20:47:38.577061 [debug] [Thread-4 (]: Began compiling node test.spotify_dbt.unique_fact_tracks_track_id.dac5d4079c
+[0m20:47:38.577061 [debug] [Thread-4 (]: Writing injected SQL for node "test.spotify_dbt.unique_fact_tracks_track_id.dac5d4079c"
+[0m20:47:38.577061 [debug] [Thread-4 (]: Began executing node test.spotify_dbt.unique_fact_tracks_track_id.dac5d4079c
+[0m20:47:38.577061 [debug] [Thread-4 (]: Writing runtime sql for node "test.spotify_dbt.unique_fact_tracks_track_id.dac5d4079c"
+[0m20:47:38.577061 [debug] [Thread-4 (]: Using postgres connection "test.spotify_dbt.unique_fact_tracks_track_id.dac5d4079c"
+[0m20:47:38.577061 [debug] [Thread-4 (]: On test.spotify_dbt.unique_fact_tracks_track_id.dac5d4079c: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "spotify_dbt", "target_name": "dev", "node_id": "test.spotify_dbt.unique_fact_tracks_track_id.dac5d4079c"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    track_id as unique_field,
+    count(*) as n_records
+
+from "neondb"."public_marts"."fact_tracks"
+where track_id is not null
+group by track_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:47:38.577061 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m20:47:38.669945 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.179 seconds
+[0m20:47:38.669945 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.162 seconds
+[0m20:47:38.669945 [debug] [Thread-1 (]: On test.spotify_dbt.unique_dim_genre_genre_id.757304f7bc: ROLLBACK
+[0m20:47:38.669945 [debug] [Thread-3 (]: On test.spotify_dbt.unique_dim_genre_genre_name.9be7947bba: ROLLBACK
+[0m20:47:38.685878 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.202 seconds
+[0m20:47:38.685878 [debug] [Thread-2 (]: On test.spotify_dbt.unique_dim_artist_artist_name.e514e8ae86: ROLLBACK
+[0m20:47:38.685878 [debug] [Thread-3 (]: On test.spotify_dbt.unique_dim_genre_genre_name.9be7947bba: Close
+[0m20:47:38.685878 [debug] [Thread-1 (]: On test.spotify_dbt.unique_dim_genre_genre_id.757304f7bc: Close
+[0m20:47:38.701947 [info ] [Thread-3 (]: 55 of 56 PASS unique_dim_genre_genre_name ...................................... [[32mPASS[0m in 0.20s]
+[0m20:47:38.701947 [info ] [Thread-1 (]: 54 of 56 PASS unique_dim_genre_genre_id ........................................ [[32mPASS[0m in 0.22s]
+[0m20:47:38.701947 [debug] [Thread-3 (]: Finished running node test.spotify_dbt.unique_dim_genre_genre_name.9be7947bba
+[0m20:47:38.705696 [debug] [Thread-1 (]: Finished running node test.spotify_dbt.unique_dim_genre_genre_id.757304f7bc
+[0m20:47:38.705696 [debug] [Thread-2 (]: On test.spotify_dbt.unique_dim_artist_artist_name.e514e8ae86: Close
+[0m20:47:38.705696 [info ] [Thread-2 (]: 53 of 56 PASS unique_dim_artist_artist_name .................................... [[32mPASS[0m in 0.29s]
+[0m20:47:38.705696 [debug] [Thread-2 (]: Finished running node test.spotify_dbt.unique_dim_artist_artist_name.e514e8ae86
+[0m20:47:38.832575 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.243 seconds
+[0m20:47:38.834583 [debug] [Thread-4 (]: On test.spotify_dbt.unique_fact_tracks_track_id.dac5d4079c: ROLLBACK
+[0m20:47:38.846744 [debug] [Thread-4 (]: On test.spotify_dbt.unique_fact_tracks_track_id.dac5d4079c: Close
+[0m20:47:38.846744 [info ] [Thread-4 (]: 56 of 56 PASS unique_fact_tracks_track_id ...................................... [[32mPASS[0m in 0.27s]
+[0m20:47:38.856960 [debug] [Thread-4 (]: Finished running node test.spotify_dbt.unique_fact_tracks_track_id.dac5d4079c
+[0m20:47:38.856960 [debug] [MainThread]: On master: COMMIT
+[0m20:47:38.856960 [debug] [MainThread]: Using postgres connection "master"
+[0m20:47:38.856960 [debug] [MainThread]: On master: COMMIT
+[0m20:47:38.859371 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m20:47:39.032512 [debug] [MainThread]: SQL status: COMMIT in 0.177 seconds
+[0m20:47:39.032512 [debug] [MainThread]: On master: Close
+[0m20:47:39.032512 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:47:39.032512 [debug] [MainThread]: Connection 'list_neondb_public_staging' was properly closed.
+[0m20:47:39.032512 [debug] [MainThread]: Connection 'list_neondb_public_marts' was properly closed.
+[0m20:47:39.032512 [debug] [MainThread]: Connection 'test.spotify_dbt.unique_dim_genre_genre_id.757304f7bc' was properly closed.
+[0m20:47:39.032512 [debug] [MainThread]: Connection 'test.spotify_dbt.unique_dim_artist_artist_name.e514e8ae86' was properly closed.
+[0m20:47:39.032512 [debug] [MainThread]: Connection 'test.spotify_dbt.unique_dim_genre_genre_name.9be7947bba' was properly closed.
+[0m20:47:39.032512 [debug] [MainThread]: Connection 'test.spotify_dbt.unique_fact_tracks_track_id.dac5d4079c' was properly closed.
+[0m20:47:39.046782 [info ] [MainThread]: 
+[0m20:47:39.046782 [info ] [MainThread]: Finished running 56 data tests in 0 hours 0 minutes and 21.17 seconds (21.17s).
+[0m20:47:39.057552 [debug] [MainThread]: Command end result
+[0m20:47:39.092197 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\VAISHAK\OneDrive\Desktop\DMQL\spotify-music-trends\spotify_dbt\target\manifest.json
+[0m20:47:39.095529 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\VAISHAK\OneDrive\Desktop\DMQL\spotify-music-trends\spotify_dbt\target\semantic_manifest.json
+[0m20:47:39.097535 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\VAISHAK\OneDrive\Desktop\DMQL\spotify-music-trends\spotify_dbt\target\run_results.json
+[0m20:47:39.097535 [info ] [MainThread]: 
+[0m20:47:39.097535 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m20:47:39.106516 [info ] [MainThread]: 
+[0m20:47:39.106516 [info ] [MainThread]: Done. PASS=56 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=56
+[0m20:47:39.106516 [debug] [MainThread]: Command `dbt test` succeeded at 20:47:39.106516 after 25.63 seconds
+[0m20:47:39.106516 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025477A336A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025477DA4A00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002547AA31960>]}
+[0m20:47:39.106516 [debug] [MainThread]: Flushing usage events
+[0m20:47:39.268548 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:48:39.594702 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002F7CA1E3730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002F7CB565270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002F7CB565090>]}
+
+
+============================== 20:48:39.594702 | eb79d9c7-56e4-458c-a35d-3711ecedd490 ==============================
+[0m20:48:39.594702 [info ] [MainThread]: Running with dbt=1.11.8
+[0m20:48:39.594702 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\VAISHAK\\OneDrive\\Desktop\\DMQL\\spotify-music-trends\\spotify_dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt docs serve --host 0.0.0.0 --port 8080', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\VAISHAK\\OneDrive\\Desktop\\DMQL\\spotify-music-trends\\spotify_dbt\\logs'}
+[0m20:48:39.748178 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'eb79d9c7-56e4-458c-a35d-3711ecedd490', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002F7CB6403A0>]}
+[0m20:48:39.793765 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'eb79d9c7-56e4-458c-a35d-3711ecedd490', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002F7CA55B0A0>]}
